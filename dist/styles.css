@@ -579,9 +579,50 @@ h1 {
   position: static;
 }
 
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+
+.font-droid-sans {
+  font-family: "Droid Sans", monospace;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+/* Define consola font */
+
+@font-face {
+  font-family: 'CONSOLA';
+
+  src: url(./assets/fonts/CONSOLA.TTF) format('truetype');
+
+  font-display: swap;
+
+  /* optional but for better font loading */
+}
+
+/* Define Consolas font */
+
+@font-face {
+  font-family: 'Consolas';
+
+  src: url(./assets/fonts/Consolas.ttf) format('truetype');
+
+  font-display: swap;
+}
+
+/* Define Droid Sans font */
+
+@font-face {
+  font-family: 'Droid Sans';
+
+  src: url(./assets/fonts/droid-sans-regular.ttf) format('truetype');
+
+  font-display: swap;
 }
 
 /* Vanilla CSS */
@@ -611,3 +652,4 @@ h1 {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+
