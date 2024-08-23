@@ -446,6 +446,27 @@ video {
   display: none;
 }
 
+*, *::before, ::after {
+  margin: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-repeat: no-repeat;
+  background-size: 100% 100vh;
+}
+
+body {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+h1 {
+  color: rgba(214, 226, 223, 0.651);
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -558,6 +579,11 @@ video {
   position: static;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 /* Vanilla CSS */
 
 .vanilla-bg-gradient {
@@ -584,14 +610,4 @@ video {
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.custom-heading {
-  --tw-bg-opacity: 1;
-  background-color: rgb(79 70 229 / var(--tw-bg-opacity));
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-  font-weight: 700;
-  --tw-text-opacity: 1;
-  color: rgb(229 231 235 / var(--tw-text-opacity));
 }

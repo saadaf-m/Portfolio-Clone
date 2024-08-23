@@ -15,10 +15,31 @@
 }
 
 /* Custom Classes */
-.custom-button {
-    @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
+@layer base {
+
+    *, *::before, ::after {
+        @apply m-0 p-0 box-border;
+    }
+
+    html {
+        @apply custom-bg-size bg-no-repeat scroll-smooth;
+    }
+
+    body {
+        @apply text-sm;
+    }
+
+    h1 {
+        @apply text-sage-transparent;
+    }
 }
 
-.custom-heading {
-    @apply text-4xl font-bold text-gray-200 bg-indigo-600;
+@layer utilities {
+    .custom-bg-size {
+        background-size: 100% 100vh;
+    }
+}
+
+.custom-button {
+    @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
 }
