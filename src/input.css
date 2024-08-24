@@ -25,7 +25,7 @@
 }
 
 /* Vanilla CSS */
-.vanilla-bg-gradient {
+.vanilla-bg-gradient { /* html background gradient */
     background: linear-gradient(to bottom,
             #040706 20%,
             #0f1817 60%,
@@ -36,6 +36,14 @@
     color: var(--sea-green);
 }
 
+.home-bg-gradient { /* home section card gradient */
+    background: linear-gradient(200deg,
+    rgba(55, 78, 72, 0.23) 40%,
+    rgba(127, 180, 166, 0.43) 100%);
+}
+
+
+
 /* Custom Classes */
 @layer base {
 
@@ -44,15 +52,17 @@
     }
 
     html {
-        @apply custom-bg-size bg-no-repeat scroll-smooth;
+        @apply custom-bg-size bg-no-repeat scroll-smooth text-sea-green;
     }
 
     body {
-        @apply text-[14px] text-sea-green;
+        @apply text-[14px];
     }
 
+    h1 {}
+
     nav {
-        @apply flex flex-col items-center justify-between text-[13px] text-sea-green;
+        @apply flex flex-col items-center justify-between text-[13px];
     }
 
     nav>p {
@@ -62,7 +72,6 @@
     hr {
         @apply h-[3px] border-solid border-blood bg-blood;
     }
-
 
     form {
         @apply pt-2.5 px-[50px] pb-[100px];
@@ -74,27 +83,28 @@
 }
 
 @layer utilities {
+    /* CUSTOM CLASSES made for any section */
 
     .custom-bg-size {
         background-size: 100% 100vh;
     }
 
-    /* margin-bottom: unset */
+    /* apply margin-bottom: unset */
     .mb-unset {
         margin-bottom: unset;
     }
 
-    /* no decarations to links */
+    /* apply no decarations to links */
     .no-text-decoration {
         text-decoration: none;
     }
 
-    /* no background (targets all background properties) */
+    /* apply no background (targets all background properties) */
     .no-bg {
         background: none;
     }
 
-    /* nav */
+    /* section: nav */
     .navbar {
         @apply w-full pt-[15px] px-[15px] pb-0 font-jetbrains;
     }
@@ -135,4 +145,14 @@
         @apply text-[#bbc9bda2] mr-[5.85px];
     }
 
+    /* section: home */
+    #home {
+        @apply pt-5;
+    }
+
+    #home-container {
+        @apply inline-grid grid-cols-[auto_auto] relative mt-20 mx-40 pt-[10px] px-10 h-[613px]
+        z-0 home-bg-gradient border-4 border-solid border-container-border-1 rounded-[7px]
+        xs:h-[650px] xs:mt-[30px] xs:mx-5 xs:mb-20; 
+    }
 }

@@ -7,7 +7,7 @@
   <link href="/dist/styles.css" rel="stylesheet" />
   <link rel="icon" type="image/x-icon"
     href="https://static.vecteezy.com/system/resources/previews/027/951/096/original/pixel-art-a-coffee-cup-icon-png.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
@@ -25,30 +25,58 @@
         <li><a href="#about">about</a></li>
         <li><a href="#contact">contact</a></li>
       </ul>
-      <p>Saadaf Mohsin • Located in the Greater Toronto Area • (647) 640-6406 •
+      <p>
+        Saadaf Mohsin • Located in the Greater Toronto Area • (647) 640-6406 •
         <button class="nav-email" onclick="copyContentNav()">
-          <i class='bx bxs-copy-alt'></i>
+          <i class="bx bxs-copy-alt"></i>
           <p id="nav-email">saadafmohsin@gmail.com</p>
         </button>
       </p>
     </nav>
-    <hr>
+    <hr />
   </section>
 
+  <section id="home">
+    <div id="home-container">
+      <div class="profile-card">
+        <h1>Saadaf Mohsin</h1>
+        <img class="profile-img" src="/src/assets/images/sunset.jpg" alt="profile-pic" />
+        <ul class="social-links">
+          <li>
+            <a href="https://www.linkedin.com/in/saadaf-mohsin/" target="”_blank”"></a>
+            <i class="bx bxl-linkedin social-icon"></i>
+          </li>
+          <li>
+            <a href="https://github.com/saadaf-m" target="”_blank”"></a>
+            <i class="bx bxl-github social-icon"></i>
+          </li>
+          <li>
+            <a href="/src/assets/documents/2024-SaadafMohsin.pdf" target="”_blank”"></a>
+            <i class='bx bxs-file-pdf'></i>
+          </li>
+          <li>
+            <a href="mailto:saadafmohsin@gmail.com" target="”_blank”"></a>
+            <i class='bx bx-mail-send'></i>
+          </li>
+        </ul>
+      </div>
+      <div class="profile-desription">
+        <p><span>is a</span> Junior Front End Developer <span>primarily focused on the 
+          intersection of design, technology, and culture.</span>
+        </p>
+      </div>
+    </div>
+  </section>
 
-
-  <section id="home"></section>
   <section id="projects"></section>
   <section id="about"></section>
   <section id="contact"></section>
   <footer></footer>
 
-  
   <script src="/src/script.js"></script>
 </body>
 
 </html>
-
 
 <!-- Note that when the website is done, just upload the dist folder into your host 
  (or just the two folders in dist)-->

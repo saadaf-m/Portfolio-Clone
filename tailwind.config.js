@@ -2,6 +2,9 @@
 module.exports = {
   content: ["./dist/*.{html,js}"],
   theme: {
+    screens: {
+      'xs': '360px',  // => @media (min-width: 360px) {...}
+    },
     extend: {
       colors: {
         // container colors
