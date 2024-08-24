@@ -6,7 +6,8 @@
 @font-face {
     font-family: 'CONSOLA';
     src: url(./assets/fonts/CONSOLA.TTF) format('truetype');
-    font-display: swap;  /* optional but for better font loading */
+    font-display: swap;
+    /* optional but for better font loading */
 }
 
 /* Define Consolas font */
@@ -47,21 +48,91 @@
     }
 
     body {
-        @apply text-sm;
+        @apply text-[14px] text-sea-green;
     }
 
-    h1 {
-        @apply text-sage-transparent;
+    nav {
+        @apply flex flex-col items-center justify-between text-[13px] text-sea-green;
+    }
+
+    nav>p {
+        @apply my-[12.5px] mx-0 text-center text-[11.7px] text-slate-grey leading-[18.5px];
+    }
+
+    hr {
+        @apply h-[3px] border-solid border-blood bg-blood;
+    }
+
+
+    form {
+        @apply pt-2.5 px-[50px] pb-[100px];
+    }
+
+    footer {
+        @apply pt-5 px-0 pb-10;
     }
 }
 
 @layer utilities {
+
     .custom-bg-size {
         background-size: 100% 100vh;
     }
-}
 
-.custom-button {
-    @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
-}
+    /* margin-bottom: unset */
+    .mb-unset {
+        margin-bottom: unset;
+    }
 
+    /* no decarations to links */
+    .no-text-decoration {
+        text-decoration: none;
+    }
+
+    /* no background (targets all background properties) */
+    .no-bg {
+        background: none;
+    }
+
+    /* nav */
+    .navbar {
+        @apply w-full pt-[15px] px-[15px] pb-0 font-jetbrains;
+    }
+
+    .nav-ul {
+        @apply inline-flex items-center z-[3] mb-unset py-0.5 px-5 gap-x-[10px] rounded-[3px] bg-dark-tempered-glass overflow-hidden;
+    }
+
+    .nav-ul>li {
+        @apply list-none;
+    }
+
+    .nav-ul>li>a {
+        @apply p-0 no-text-decoration;
+    }
+
+    .nav-ul>li>a:hover {
+        @apply text-nav-link-hover-color duration-500;
+    }
+
+    .nav-ul>li>a:not(:hover) {
+        @apply duration-500;
+    }
+
+    .nav-email {
+        @apply inline-flex items-center border-none no-bg
+    }
+
+    .nav-email:active {
+        @apply text-[#bbc9bda2];
+    }
+
+    .nav-email:focus {
+        @apply outline-none;
+    }
+
+    .nav-email>i {
+        @apply text-[#bbc9bda2] mr-[5.85px];
+    }
+
+}

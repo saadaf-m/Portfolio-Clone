@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- Note that in the future when the website is done, just upload the dist folder into your host -->
 <html lang="en">
 
 <head>
@@ -18,10 +17,38 @@
 </head>
 
 <body id="homepage" class="vanilla-bg-gradient">
-  <h1 class="text-4xl font-droid-sans">THERE. WE. LAND.</h1>
-  <p class="font-droid-sans text-4xl bg-red-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur iure, repellendus!</p>
+  <section id="navbar" class="navbar">
+    <nav>
+      <ul class="nav-ul">
+        <li><a href="#homepage">home</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+      <p>Saadaf Mohsin • Located in the Greater Toronto Area • (647) 640-6406 •
+        <button class="nav-email" onclick="copyContentNav()">
+          <i class='bx bxs-copy-alt'></i>
+          <p id="nav-email">saadafmohsin@gmail.com</p>
+        </button>
+      </p>
+    </nav>
+    <hr>
+  </section>
+
+
+
+  <section id="home"></section>
+  <section id="projects"></section>
+  <section id="about"></section>
+  <section id="contact"></section>
+  <footer></footer>
+
   
   <script src="/src/script.js"></script>
 </body>
 
 </html>
+
+
+<!-- Note that when the website is done, just upload the dist folder into your host 
+ (or just the two folders in dist)-->

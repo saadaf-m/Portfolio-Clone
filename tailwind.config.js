@@ -3,9 +3,6 @@ module.exports = {
   content: ["./dist/*.{html,js}"],
   theme: {
     extend: {
-      // backgroundSize: {
-      //   'custom-bg-size': '100% 100vh',
-      // },
       colors: {
         // container colors
         'container-shade-1': 'rgba(55, 78, 72, 0.23)',
@@ -22,8 +19,9 @@ module.exports = {
         'sea-green': '#2EC57C',
         'sage': '#6E9A8E',
         'tiffany': '#95D1C1',
-        'slate-grey': 'C7C9C9',
+        'slate-grey': '#C7C9C9',
         'sage-transparent': 'rgba(214, 226, 223, 0.651)',
+        'nav-link-hover-color': 'rgba(239, 243, 237, 0.952)', 
         // unused colors
         'seafoam-green': '#93E9BE',
         'clay-green': '#739A78',
@@ -35,7 +33,8 @@ module.exports = {
       fontFamily: {
         consola: ['CONSOLA', 'monospace'],
         Consolas: ['Consolas', 'monospace'],
-        'droid-sans': ['"Droid Sans"', 'monospace']
+        'droid-sans': ['"Droid Sans"', 'monospace'],
+        jetbrains: ['"JetBrains Mono"', 'monospace'],
       }
     },
   },
