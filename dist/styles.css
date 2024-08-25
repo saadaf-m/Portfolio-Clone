@@ -465,6 +465,43 @@ body {
 }
 
 h1 {
+  position: relative;
+  top: 2.5px;
+  font-family: CONSOLA, monospace;
+  font-size: 3.75rem;
+  line-height: 1;
+  font-size: 49px;
+  font-weight: 700;
+}
+
+@media (min-width: 360px) {
+  h1 {
+    font-size: 37.5px;
+  }
+}
+
+@media (min-width: 480px) {
+  h1 {
+    top: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    top: 34px;
+    font-size: 41px;
+  }
+}
+
+@media (min-width: 1262px) {
+  h1 {
+    position: relative;
+    top: 4rem;
+  }
+}
+
+li {
+  list-style-type: none;
 }
 
 nav {
@@ -720,6 +757,7 @@ footer {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
   padding-top: 10px;
+  padding-right: 5px;
   /* home section card gradient */
   background: linear-gradient(200deg,
     rgba(55, 78, 72, 0.23) 40%,
@@ -752,6 +790,233 @@ footer {
         rgba(127, 180, 166, 0.43) 100%);
     height: 72vh;
   }
+}
+
+@media (min-width: 768px) {
+  #home-container {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+    height: 450px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 1.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  #home-container {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 5px;
+    padding-left: 2.5rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  #home-container {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-left: 100px;
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-bottom: 0px;
+    margin-left: 2.5rem;
+    border-style: none;
+  }
+}
+
+/* #container-home-div-1 */
+
+#profile-card {
+  height: 594px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-right: 60px;
+  padding-left: 0px;
+}
+
+@media (min-width: 360px) {
+  #profile-card {
+    height: 375px;
+    padding: 0px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 480px) {
+  #profile-card {
+    height: 405px;
+    justify-self: center;
+  }
+}
+
+@media (min-width: 768px) {
+  #profile-card {
+    height: 431px;
+  }
+}
+
+#profile-img {
+  position: relative;
+  top: -18px;
+  left: 55px;
+  z-index: -1;
+  height: 468px;
+  width: 380px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media (min-width: 360px) {
+  #profile-img {
+    left: 0px;
+    width: 230px;
+  }
+}
+
+@media (min-width: 480px) {
+  #profile-img {
+    top: 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  #profile-img {
+    top: 10px;
+    width: 245px;
+  }
+}
+
+@media (min-width: 1262px) {
+  #profile-img {
+    top: 2.25rem;
+    z-index: -1;
+    height: auto;
+    width: 323px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+
+#social-links {
+  position: relative;
+  top: -67px;
+  left: 15rem;
+  display: flex;
+  width: 260px;
+}
+
+@media (min-width: 360px) {
+  #social-links {
+    left: 50%;
+    --tw-translate-x: -50%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    justify-content: center;
+  }
+}
+
+@media (min-width: 480px) {
+  #social-links {
+    top: -35px;
+  }
+}
+
+@media (min-width: 768px) {
+  #social-links {
+    top: -25px;
+    left: 135px;
+  }
+}
+
+@media (min-width: 1262px) {
+  #social-links {
+    top: -10px;
+    left: 190px;
+    width: 260px;
+  }
+}
+
+#social-links > li {
+  font-size: 62px;
+}
+
+@media (min-width: 768px) {
+  #social-links > li {
+    font-size: 49px;
+  }
+}
+
+@media (min-width: 1262px) {
+  #social-links > li {
+    font-size: 59px;
+  }
+}
+
+.social-icon:hover {
+  --tw-text-opacity: 1;
+  color: rgb(0 106 78 / var(--tw-text-opacity));
+  transition-duration: 500ms;
+}
+
+.social-icon:not(:hover) {
+  transition-duration: 500ms;
+}
+
+/* #container-home-div-2 */
+
+#profile-description {
+  height: 594px;
+  align-content: center;
+}
+
+@media (min-width: 480px) {
+  #profile-description {
+    height: 200px;
+    align-self: flex-start;
+  }
+}
+
+@media (min-width: 768px) {
+  #profile-description {
+    height: 431px;
+  }
+}
+
+/* #intro */
+
+#profile-description > p {
+  margin-bottom: unset;
+  text-align: center;
+  font-family: CONSOLA, monospace;
+  font-size: 51.5px;
+  font-weight: 700;
+}
+
+@media (min-width: 360px) {
+  #profile-description > p {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 480px) {
+  #profile-description > p {
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    padding-top: 0px;
+    padding-bottom: 1.25rem;
+    font-size: 25px;
+  }
+}
+
+#profile-description > p > span {
+  --tw-text-opacity: 1;
+  color: rgb(0 106 78 / var(--tw-text-opacity));
 }
 
 /* Define consola font */

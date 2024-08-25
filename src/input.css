@@ -57,7 +57,14 @@
         @apply text-[14px];
     }
 
-    h1 {}
+    h1 {
+        @apply relative top-[2.5px] font-consola font-bold text-6xl xs:text-[37.5px]
+        s:top-6 md:top-[34px] md:text-[41px] lg2:relative lg2:top-16 text-[49px];
+    }
+
+    li {
+        @apply list-none;
+    }
 
     nav {
         @apply flex flex-col items-center justify-between text-[13px];
@@ -163,6 +170,54 @@
         @apply relative inline-grid grid-cols-[auto_auto] mt-20 mx-40 pt-[10px] px-10 h-[613px]
         z-0 home-bg-gradient border-4 border-solid border-container-border-1 rounded-[7px]
         xs:h-[650px] xs:mt-[30px] xs:mx-5 xs:mb-20 s:grid s:grid-cols-[unset]
-        s:grid-rows-[auto_auto] s:mt-10 s:mx-5 s:mb-20 s:p-0 s:h-72vh s:home-bg-gradient-s;
+        s:grid-rows-[auto_auto] s:mt-10 s:mx-5 s:mb-20 s:p-0 s:h-72vh s:home-bg-gradient-s 
+        md:my-10 md:mx-5 md:py-0 pr-[5px] md:pl-5 md:h-[450px] lg:py-0 lg:pr-[5px] lg:pl-10
+        2xl:my-20 2xl:mx-[100px] 2xl:mt-[10px] 2xl:mr-[5px] 2xl:mb-0 2xl:ml-10 2xl:border-none;
     }
+
+    /* #container-home-div-1 */
+    #profile-card {
+        @apply h-[594px] py-0 pr-[60px] pl-0 xs:p-0 xs:h-[375px] xs:text-center s:h-[405px] 
+        s:justify-self-center md:h-[431px];
+    }
+
+    #profile-img {
+        @apply relative top-[-18px] left-[55px] h-[468px] w-[380px] z-[-1] object-contain
+        xs:left-0 xs:w-[230px] s:top-0 md:top-[10px] md:w-[245px] lg2:top-9 lg2:w-[323px] lg2:h-auto
+        lg2:z-[-1] lg2:object-contain;
+    }
+
+    #social-links {
+        @apply relative flex top-[-67px] left-60 w-[260px] xs:justify-center xs:left-1/2
+        xs:-translate-x-1/2 s:top-[-35px] md:top-[-25px] md:left-[135px]
+        lg2:top-[-10px] lg2:left-[190px] lg2:w-[260px];
+    }
+
+    #social-links > li {
+        @apply text-[62px] md:text-[49px] lg2:text-[59px];
+    }
+
+    .social-icon {
+        @apply hover:text-container-border-1 hover:duration-500;
+    }
+
+    .social-icon:not(:hover) {
+        @apply duration-500;
+    }
+
+    /* #container-home-div-2 */
+    #profile-description {
+        @apply h-[594px] content-center s:self-start s:h-[200px] md:h-[431px];
+    }
+
+    /* #intro */
+    #profile-description > p {
+        @apply font-consola font-bold text-[51.5px] text-center mb-[unset]
+        xs:py-0 xs:px-[5px] xs:text-[22px] s:pt-0 s:px-[7.5px] s:pb-5 s:text-[25px];
+    }
+
+    #profile-description > p > span {
+        @apply text-container-border-1
+    }
+
 }
