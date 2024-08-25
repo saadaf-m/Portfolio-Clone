@@ -740,6 +740,12 @@ footer {
   padding-top: 1.25rem;
 }
 
+@media (min-width: 768px) {
+  #home {
+    padding: 0px;
+  }
+}
+
 #home-container {
   position: relative;
   z-index: 0;
@@ -750,18 +756,15 @@ footer {
   height: 613px;
   grid-template-columns: auto auto;
   border-radius: 7px;
-  border-width: 4px;
-  border-style: solid;
-  --tw-border-opacity: 1;
-  border-color: rgb(0 106 78 / var(--tw-border-opacity));
+  border-style: none;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
   padding-top: 10px;
   padding-right: 5px;
-  /* home section card gradient */
-  background: linear-gradient(200deg,
-    rgba(55, 78, 72, 0.23) 40%,
-    rgba(127, 180, 166, 0.43) 100%);
+  /* home section card gradient style for devices w/ min. width of 480px */
+  background: linear-gradient(0deg,
+        rgba(55, 78, 72, 0.23) 40%,
+        rgba(127, 180, 166, 0.43) 100%);
 }
 
 @media (min-width: 360px) {
@@ -771,6 +774,10 @@ footer {
     margin-top: 30px;
     margin-bottom: 5rem;
     height: 650px;
+    grid-template-columns: unset;
+    grid-template-rows: auto auto;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
   }
 }
 
@@ -781,13 +788,11 @@ footer {
     margin-top: 2.5rem;
     margin-bottom: 5rem;
     display: grid;
-    grid-template-columns: unset;
-    grid-template-rows: auto auto;
+    border-width: 2px;
+    border-style: solid;
+    --tw-border-opacity: 1;
+    border-color: rgb(248 113 113 / var(--tw-border-opacity));
     padding: 0px;
-    /* home section card gradient style for devices w/ min. width of 480px */
-    background: linear-gradient(0deg,
-        rgba(55, 78, 72, 0.23) 40%,
-        rgba(127, 180, 166, 0.43) 100%);
     height: 72vh;
   }
 }
@@ -799,9 +804,14 @@ footer {
     margin-left: 1.25rem;
     margin-right: 1.25rem;
     height: 450px;
+    grid-template-columns: auto auto;
     padding-top: 0px;
     padding-bottom: 0px;
     padding-left: 1.25rem;
+    /* home section card gradient */
+    background: linear-gradient(200deg,
+        rgba(55, 78, 72, 0.23) 40%,
+        rgba(127, 180, 166, 0.43) 100%);
   }
 }
 
@@ -823,7 +833,6 @@ footer {
     margin-right: 5px;
     margin-bottom: 0px;
     margin-left: 2.5rem;
-    border-style: none;
   }
 }
 
@@ -840,6 +849,7 @@ footer {
 @media (min-width: 360px) {
   #profile-card {
     height: 375px;
+    border-style: solid;
     padding: 0px;
     text-align: center;
   }
@@ -849,6 +859,9 @@ footer {
   #profile-card {
     height: 405px;
     justify-self: center;
+    border-width: 2px;
+    --tw-border-opacity: 1;
+    border-color: rgb(248 113 113 / var(--tw-border-opacity));
   }
 }
 
@@ -872,7 +885,10 @@ footer {
 @media (min-width: 360px) {
   #profile-img {
     left: 0px;
+    margin: auto;
+    height: unset;
     width: 230px;
+    padding-top: 0.375rem;
   }
 }
 
@@ -911,6 +927,7 @@ footer {
 @media (min-width: 360px) {
   #social-links {
     left: 50%;
+    top: -3.5rem;
     --tw-translate-x: -50%;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
     justify-content: center;
@@ -942,7 +959,7 @@ footer {
   font-size: 62px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 360px) {
   #social-links > li {
     font-size: 49px;
   }
@@ -971,10 +988,20 @@ footer {
   align-content: center;
 }
 
+@media (min-width: 360px) {
+  #profile-description {
+    margin-top: -2.5rem;
+    height: 200px;
+  }
+}
+
 @media (min-width: 480px) {
   #profile-description {
-    height: 200px;
     align-self: flex-start;
+    border-width: 2px;
+    border-style: solid;
+    --tw-border-opacity: 1;
+    border-color: rgb(248 113 113 / var(--tw-border-opacity));
   }
 }
 
@@ -1000,12 +1027,16 @@ footer {
     padding-bottom: 0px;
     padding-left: 5px;
     padding-right: 5px;
-    font-size: 22px;
+    font-size: 23px;
   }
 }
 
 @media (min-width: 480px) {
   #profile-description > p {
+    border-width: 2px;
+    border-style: solid;
+    --tw-border-opacity: 1;
+    border-color: rgb(161 161 170 / var(--tw-border-opacity));
     padding-left: 7.5px;
     padding-right: 7.5px;
     padding-top: 0px;
@@ -1063,13 +1094,6 @@ footer {
             #4e7265);
   background-attachment: fixed;
   color: var(--sea-green);
-}
-
-.home-bg-gradient {
-  /* home section card gradient */
-  background: linear-gradient(200deg,
-    rgba(55, 78, 72, 0.23) 40%,
-    rgba(127, 180, 166, 0.43) 100%);
 }
 
 /* Custom Classes */
