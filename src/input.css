@@ -42,8 +42,6 @@
     rgba(127, 180, 166, 0.43) 100%);
 }
 
-
-
 /* Custom Classes */
 @layer base {
 
@@ -84,6 +82,17 @@
 
 @layer utilities {
     /* CUSTOM CLASSES made for any section */
+
+    .home-bg-gradient-s {
+        /* home section card gradient style for devices w/ min. width of 480px */
+        background: linear-gradient(0deg,
+        rgba(55, 78, 72, 0.23) 40%,
+        rgba(127, 180, 166, 0.43) 100%);
+    }    
+
+    .h-72vh {
+        height: 72vh;
+      }
 
     .custom-bg-size {
         background-size: 100% 100vh;
@@ -151,8 +160,9 @@
     }
 
     #home-container {
-        @apply inline-grid grid-cols-[auto_auto] relative mt-20 mx-40 pt-[10px] px-10 h-[613px]
+        @apply relative inline-grid grid-cols-[auto_auto] mt-20 mx-40 pt-[10px] px-10 h-[613px]
         z-0 home-bg-gradient border-4 border-solid border-container-border-1 rounded-[7px]
-        xs:h-[650px] xs:mt-[30px] xs:mx-5 xs:mb-20; 
+        xs:h-[650px] xs:mt-[30px] xs:mx-5 xs:mb-20 s:grid s:grid-cols-[unset]
+        s:grid-rows-[auto_auto] s:mt-10 s:mx-5 s:mb-20 s:p-0 s:h-72vh s:home-bg-gradient-s;
     }
 }

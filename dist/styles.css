@@ -736,6 +736,24 @@ footer {
   }
 }
 
+@media (min-width: 480px) {
+  #home-container {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+    margin-top: 2.5rem;
+    margin-bottom: 5rem;
+    display: grid;
+    grid-template-columns: unset;
+    grid-template-rows: auto auto;
+    padding: 0px;
+    /* home section card gradient style for devices w/ min. width of 480px */
+    background: linear-gradient(0deg,
+        rgba(55, 78, 72, 0.23) 40%,
+        rgba(127, 180, 166, 0.43) 100%);
+    height: 72vh;
+  }
+}
+
 /* Define consola font */
 
 @font-face {
