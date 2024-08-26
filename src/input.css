@@ -54,9 +54,11 @@
     h1 {
         @apply relative top-[2.5px] font-consola font-bold text-6xl 
         
-        xs:text-[37.5px]
+        xs:text-[41px]
         
-        s:top-6 md:top-[34px] 
+        s:top-5 right-10
+        
+        md:top-[34px] 
         
         md:text-[41px] 
         
@@ -171,18 +173,19 @@
 
     /* section: home */
     #home {
-        @apply pt-5 md:p-0;
+        @apply pt-5 s:p-0;
     }
 
     #home-container {
-        @apply relative inline-grid grid-cols-[auto_auto] mt-20 mx-40 pt-[10px] px-10 h-[613px]
-        z-0 home-bg-gradient-s border-none rounded-[7px]
+        @apply relative inline-grid grid-cols-[auto_auto] mt-20 mx-40 pt-[10px] px-10 
+        h-[613px] z-0 home-bg-gradient-s border-none rounded-[7px]
         
-        xs:h-[650px] xs:mt-[30px] xs:mx-5 xs:mb-20 xs:px-3 
+        xs:h-[650px] xs:mt-[30px] xs:mx-5 xs:mb-20 xs:px-3
         xs:grid-cols-[unset] xs:grid-rows-[auto_auto]
 
-        s:grid s:mt-10 s:mx-5 s:mb-20 s:p-0 s:h-72vh 
-        s:border-solid s:border-red-400 s:border-2
+        s:grid s:mt-10 s:mx-5 s:mb-20 s:p-0 
+        /* s:h-72vh  */
+        /* xs:border-solid xs:border-red-400 xs:border-2 */
 
         md:my-10 md:mx-5 md:py-0 pr-[5px] md:pl-5 md:h-[450px] md:grid-cols-[auto_auto]
         md:home-bg-gradient 
@@ -196,10 +199,12 @@
     #profile-card {
         @apply h-[594px] py-0 pr-[60px] pl-0 
         
-        xs:p-0 xs:h-[375px] xs:text-center xs:border-solid 
+        xs:p-0 xs:pt-4 xs:h-[375px] xs:text-center xs:border-solid 
         
-        s:h-[405px] s:justify-self-center md:h-[431px]
-        s:border-red-400 s:border-2;
+        s:h-[405px] s:justify-self-center s:pt-4
+        /* s:border-red-400 s:border-2 */
+        
+        md:h-[431px];
     }
 
     #profile-img {
@@ -217,7 +222,7 @@
         
         xs:justify-center xs:left-1/2 xs:-translate-x-1/2 xs:-top-14
 
-        s:top-[-35px] 
+        s:top-[-35px] s:justify-end s:ml-4
         
         md:top-[-25px] md:left-[135px]
 
@@ -243,7 +248,8 @@
         xs:h-[200px] xs:-mt-10
         
         s:self-start md:h-[431px]
-        s:border-solid s:border-red-400 s:border-2;
+        /* s:border-solid s:border-red-400 s:border-2 */
+        ;
     }
 
     /* #intro */
@@ -252,8 +258,9 @@
 
         xs:py-0 xs:px-[5px] xs:text-[23px]
         
-        s:pt-0 s:px-[7.5px] s:pb-5 s:text-[25px]
-        s:border-solid s:border-zinc-400 s:border-2;
+        s:py-5 s:px-[18.75px] s:text-[27px]
+        /* s:border-solid s:border-zinc-400 s:border-2 */
+        ;
     }
 
     #profile-description > p > span {

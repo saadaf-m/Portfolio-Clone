@@ -467,6 +467,7 @@ body {
 h1 {
   position: relative;
   top: 2.5px;
+  right: 2.5rem;
   font-family: CONSOLA, monospace;
   font-size: 3.75rem;
   line-height: 1;
@@ -476,13 +477,13 @@ h1 {
 
 @media (min-width: 360px) {
   h1 {
-    font-size: 37.5px;
+    font-size: 41px;
   }
 }
 
 @media (min-width: 480px) {
   h1 {
-    top: 1.5rem;
+    top: 1.25rem;
   }
 }
 
@@ -749,7 +750,7 @@ footer {
   padding-top: 1.25rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   #home {
     padding: 0px;
   }
@@ -797,12 +798,7 @@ footer {
     margin-top: 2.5rem;
     margin-bottom: 5rem;
     display: grid;
-    border-width: 2px;
-    border-style: solid;
-    --tw-border-opacity: 1;
-    border-color: rgb(248 113 113 / var(--tw-border-opacity));
     padding: 0px;
-    height: 72vh;
   }
 }
 
@@ -860,6 +856,7 @@ footer {
     height: 375px;
     border-style: solid;
     padding: 0px;
+    padding-top: 1rem;
     text-align: center;
   }
 }
@@ -868,9 +865,7 @@ footer {
   #profile-card {
     height: 405px;
     justify-self: center;
-    border-width: 2px;
-    --tw-border-opacity: 1;
-    border-color: rgb(248 113 113 / var(--tw-border-opacity));
+    padding-top: 1rem;
   }
 }
 
@@ -946,6 +941,8 @@ footer {
 @media (min-width: 480px) {
   #social-links {
     top: -35px;
+    margin-left: 1rem;
+    justify-content: flex-end;
   }
 }
 
@@ -1007,10 +1004,6 @@ footer {
 @media (min-width: 480px) {
   #profile-description {
     align-self: flex-start;
-    border-width: 2px;
-    border-style: solid;
-    --tw-border-opacity: 1;
-    border-color: rgb(248 113 113 / var(--tw-border-opacity));
   }
 }
 
@@ -1042,15 +1035,11 @@ footer {
 
 @media (min-width: 480px) {
   #profile-description > p {
-    border-width: 2px;
-    border-style: solid;
-    --tw-border-opacity: 1;
-    border-color: rgb(161 161 170 / var(--tw-border-opacity));
-    padding-left: 7.5px;
-    padding-right: 7.5px;
-    padding-top: 0px;
+    padding-top: 1.25rem;
     padding-bottom: 1.25rem;
-    font-size: 25px;
+    padding-left: 18.75px;
+    padding-right: 18.75px;
+    font-size: 27px;
   }
 }
 
