@@ -490,7 +490,7 @@ h1 {
 @media (min-width: 768px) {
   h1 {
     top: 34px;
-    font-size: 41px;
+    font-size: 45px;
   }
 }
 
@@ -756,6 +756,12 @@ footer {
   }
 }
 
+@media (min-width: 768px) {
+  #home {
+    margin-top: 70px;
+  }
+}
+
 #home-container {
   position: relative;
   z-index: 0;
@@ -804,10 +810,8 @@ footer {
 
 @media (min-width: 768px) {
   #home-container {
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
-    margin-left: 1.25rem;
-    margin-right: 1.25rem;
+    margin-left: 18px;
+    margin-right: 18px;
     height: 450px;
     grid-template-columns: auto auto;
     padding-top: 0px;
@@ -872,6 +876,7 @@ footer {
 @media (min-width: 768px) {
   #profile-card {
     height: 431px;
+    padding-top: 0px;
   }
 }
 
@@ -946,8 +951,8 @@ footer {
 
 @media (min-width: 768px) {
   #social-links {
-    top: -25px;
-    left: 135px;
+    top: -30px;
+    left: 160px;
   }
 }
 
@@ -972,6 +977,12 @@ footer {
 @media (min-width: 480px) {
   #social-links > li {
     font-size: 63px;
+  }
+}
+
+@media (min-width: 768px) {
+  #social-links > li {
+    font-size: 59px;
   }
 }
 
@@ -1013,7 +1024,9 @@ footer {
 
 @media (min-width: 768px) {
   #profile-description {
-    height: 431px;
+    margin-top: 0px;
+    height: 450px;
+    align-self: auto;
   }
 }
 
@@ -1044,6 +1057,16 @@ footer {
     padding-top: 2.25rem;
     padding-bottom: 1.25rem;
     font-size: 25px;
+  }
+}
+
+@media (min-width: 768px) {
+  #profile-description > p {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 34px;
   }
 }
 
