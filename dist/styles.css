@@ -470,8 +470,17 @@ h1 {
   font-family: CONSOLA, monospace;
   font-size: 3.75rem;
   line-height: 1;
-  font-size: 49px;
   font-weight: 700;
+}
+
+@media (min-width: 1262px) {
+  h1 {
+    --tw-text-opacity: 1;
+    color: rgb(46 197 124 / var(--tw-text-opacity));
+    /* Vanilla CSS for outlining text */
+    -webkit-text-stroke: 6px rgba(39, 127, 74, 0.651);
+    /* #529f9894; */
+  }
 }
 
 @media (min-width: 360px) {
@@ -497,7 +506,8 @@ h1 {
 @media (min-width: 1262px) {
   h1 {
     position: relative;
-    top: 4rem;
+    top: 80px;
+    font-size: 64px;
   }
 }
 
@@ -762,6 +772,12 @@ footer {
   }
 }
 
+@media (min-width: 1262px) {
+  #home {
+    margin-top: 5rem;
+  }
+}
+
 #home-container {
   position: relative;
   z-index: 0;
@@ -833,15 +849,24 @@ footer {
   }
 }
 
+@media (min-width: 1262px) {
+  #home-container {
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 2rem;
+    height: 640px;
+    padding-left: 3.5rem;
+  }
+}
+
 @media (min-width: 1440px) {
   #home-container {
     margin-top: 5rem;
     margin-bottom: 5rem;
     margin-left: 100px;
+    margin-right: 100px;
     margin-top: 10px;
-    margin-right: 5px;
     margin-bottom: 0px;
-    margin-left: 2.5rem;
   }
 }
 
@@ -877,6 +902,14 @@ footer {
   #profile-card {
     height: 431px;
     padding-top: 0px;
+  }
+}
+
+@media (min-width: 1262px) {
+  #profile-card {
+    margin-top: -90px;
+    height: 100%;
+    align-self: center;
   }
 }
 
@@ -919,7 +952,7 @@ footer {
     top: 2.25rem;
     z-index: -1;
     height: auto;
-    width: 323px;
+    width: 380px;
     -o-object-fit: contain;
        object-fit: contain;
   }
@@ -959,8 +992,11 @@ footer {
 @media (min-width: 1262px) {
   #social-links {
     top: -10px;
-    left: 190px;
+    left: unset;
+    margin: auto;
     width: 260px;
+    --tw-translate-x: 0px;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 }
 
@@ -988,7 +1024,7 @@ footer {
 
 @media (min-width: 1262px) {
   #social-links > li {
-    font-size: 59px;
+    font-size: 65px;
   }
 }
 
@@ -1030,6 +1066,12 @@ footer {
   }
 }
 
+@media (min-width: 1262px) {
+  #profile-description {
+    align-self: center;
+  }
+}
+
 /* #intro */
 
 #profile-description > p {
@@ -1067,6 +1109,15 @@ footer {
     padding-left: 30px;
     padding-right: 30px;
     font-size: 34px;
+  }
+}
+
+@media (min-width: 1262px) {
+  #profile-description > p {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 52px;
+    line-height: 1.2;
   }
 }
 

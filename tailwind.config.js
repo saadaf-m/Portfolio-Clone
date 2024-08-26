@@ -26,6 +26,7 @@ module.exports = {
         'blood': '#6A0000',
         // font colors
         'sea-green': '#2EC57C',
+        'sea-green-transparent': 'rgba(46, 197, 124, 0.651)',
         'sage': '#6E9A8E',
         'tiffany': '#95D1C1',
         'slate-grey': '#C7C9C9',
