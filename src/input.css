@@ -56,7 +56,8 @@
         
         xs:text-[41px]
         
-        s:top-5 right-10
+        s:top-6 s:text-[45px]
+        /* s:right-10 */
         
         md:top-[34px] 
         
@@ -222,7 +223,8 @@
         
         xs:justify-center xs:left-1/2 xs:-translate-x-1/2 xs:-top-14
 
-        s:top-[-35px] s:justify-end s:ml-4
+        s:top-[-30px]
+        /* s:justify-end s:ml-4 */
         
         md:top-[-25px] md:left-[135px]
 
@@ -230,7 +232,7 @@
     }
 
     #social-links > li {
-        @apply text-[62px] xs:text-[49px] lg2:text-[59px];
+        @apply text-[62px] xs:text-[53px] s:text-[63px] lg2:text-[59px];
     }
 
     .social-icon {
@@ -258,7 +260,9 @@
 
         xs:py-0 xs:px-[5px] xs:text-[23px]
         
-        s:py-5 s:px-[18.75px] s:text-[27px]
+        s:pt-9 s:pb-5 s:px-[18.75px] 
+        /* s:mt-5 */
+        s:text-[25px]
         /* s:border-solid s:border-zinc-400 s:border-2 */
         ;
     }

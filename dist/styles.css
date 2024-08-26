@@ -467,7 +467,6 @@ body {
 h1 {
   position: relative;
   top: 2.5px;
-  right: 2.5rem;
   font-family: CONSOLA, monospace;
   font-size: 3.75rem;
   line-height: 1;
@@ -483,7 +482,8 @@ h1 {
 
 @media (min-width: 480px) {
   h1 {
-    top: 1.25rem;
+    top: 1.5rem;
+    font-size: 45px;
   }
 }
 
@@ -940,9 +940,7 @@ footer {
 
 @media (min-width: 480px) {
   #social-links {
-    top: -35px;
-    margin-left: 1rem;
-    justify-content: flex-end;
+    top: -30px;
   }
 }
 
@@ -967,7 +965,13 @@ footer {
 
 @media (min-width: 360px) {
   #social-links > li {
-    font-size: 49px;
+    font-size: 53px;
+  }
+}
+
+@media (min-width: 480px) {
+  #social-links > li {
+    font-size: 63px;
   }
 }
 
@@ -1035,11 +1039,11 @@ footer {
 
 @media (min-width: 480px) {
   #profile-description > p {
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
     padding-left: 18.75px;
     padding-right: 18.75px;
-    font-size: 27px;
+    padding-top: 2.25rem;
+    padding-bottom: 1.25rem;
+    font-size: 25px;
   }
 }
 
