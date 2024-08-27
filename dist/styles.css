@@ -679,9 +679,11 @@ footer {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-/* CUSTOM CLASSES made for any section */
+/* vanilla CSS custom classes */
 
-/* apply margin-bottom: unset */
+/* custom classes used in home section */
+
+/* custom classes used in project section */
 
 /* apply no decarations to links */
 
@@ -700,6 +702,7 @@ footer {
 
 .nav-ul {
   z-index: 3;
+  margin-bottom: unset;
   display: inline-flex;
   align-items: center;
   -moz-column-gap: 10px;
@@ -712,7 +715,6 @@ footer {
   padding-bottom: 0.125rem;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
-  margin-bottom: unset;
 }
 
 .nav-ul>li {
@@ -793,7 +795,6 @@ footer {
   padding-right: 2.5rem;
   padding-top: 10px;
   padding-right: 5px;
-  /* home section card gradient style for devices w/ min. width of 480px */
   background: linear-gradient(0deg,
         rgba(55, 78, 72, 0.23) 40%,
         rgba(127, 180, 166, 0.43) 100%);
@@ -833,7 +834,6 @@ footer {
     padding-top: 0px;
     padding-bottom: 0px;
     padding-left: 1.25rem;
-    /* home section card gradient */
     background: linear-gradient(200deg,
         rgba(55, 78, 72, 0.23) 40%,
         rgba(127, 180, 166, 0.43) 100%);
@@ -1125,30 +1125,121 @@ footer {
 /* section: projects */
 
 #projects {
+  margin-top: 2.5rem;
   border-width: 2px;
   border-style: solid;
   --tw-border-opacity: 1;
   border-color: rgb(248 113 113 / var(--tw-border-opacity));
 }
 
+/* formerly known as '#skills-wrapper' */
+
 #education {
-  border-width: 2px;
-  border-style: dashed;
-  --tw-border-opacity: 1;
-  border-color: rgb(185 28 28 / var(--tw-border-opacity));
+  padding-top: 140px;
+  padding-bottom: 140px;
+  padding-left: 200px;
+  padding-right: 200px;
   text-align: justify;
   font-family: CONSOLA, monospace;
+  font-size: 35px;
   font-weight: 700;
 }
 
-#projects-wrapper {
+@media (min-width: 360px) {
+  #education {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    font-size: 22.5px;
+  }
 }
 
-.projects-container {
+@media (min-width: 480px) {
+  #education {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    font-size: 25px;
+  }
 }
+
+@media (min-width: 768px) {
+  #education {
+    padding-top: 140px;
+    padding-bottom: 140px;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+/* '#projects-container' */
+
+#projects-wrapper {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+
+/* '.project-container-wrapper */
+
+/* .projects-container {
+        @apply
+    } */
 
 .project-container {
+  position: relative;
+  z-index: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 12.5px;
+  margin-right: 12.5px;
+  height: 280px;
+  width: 375px;
+  border-radius: 7px;
+  padding: 25px;
+  font-family: "Roboto Flex", sans-serif;
+  --tw-text-opacity: 1;
+  color: rgb(199 201 201 / var(--tw-text-opacity));
+  background: linear-gradient(
+        rgba(127, 180, 166, 0.29) 50%,
+        rgba(55, 78, 72, 0.12) 100%);
 }
+
+.project-container::before {
+  pointer-events: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  border-radius: 7px;
+  padding: 0.25rem;
+  --tw-content: "";
+  background: linear-gradient(to bottom, 
+        #006A4E 0%,
+        #00D099 100%);
+  content: var(--tw-content);
+  -webkit-mask:
+            linear-gradient(#fff 0 0) content-box,
+            linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: subtract;
+}
+
+@media (min-width: 360px) {
+  .project-container {
+    margin-left: 17.5px;
+    margin-right: 17.5px;
+    width: 325px;
+  }
+}
+
+/* '.stack-wrapper' */
 
 .stack-container {
 }
@@ -1221,7 +1312,7 @@ footer {
 @font-face {
   font-family: 'CONSOLA';
 
-  src: url(./assets/fonts/CONSOLA.TTF) format('truetype');
+  src: url(/dist/assets/fonts/CONSOLA.TTF) format('truetype');
 
   font-display: swap;
 
@@ -1233,7 +1324,7 @@ footer {
 @font-face {
   font-family: 'Consolas';
 
-  src: url(./assets/fonts/Consolas.ttf) format('truetype');
+  src: url(/dist/assets/fonts/Consolas.ttf) format('truetype');
 
   font-display: swap;
 }
@@ -1243,10 +1334,16 @@ footer {
 @font-face {
   font-family: 'Droid Sans';
 
-  src: url(./assets/fonts/droid-sans-regular.ttf) format('truetype');
+  src: url(/dist/assets/fonts/droid-sans-regular.ttf) format('truetype');
 
   font-display: swap;
 }
+
+/* Define Roboto Flex font */
+
+/* .font-roboto-flex {
+    font-family: 'Roboto Flex', sans-serif;
+} */
 
 /* Vanilla CSS */
 

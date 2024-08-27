@@ -45,6 +45,7 @@ module.exports = {
         Consolas: ['Consolas', 'monospace'],
         'droid-sans': ['"Droid Sans"', 'monospace'],
         jetbrains: ['"JetBrains Mono"', 'monospace'],
+        'roboto-flex': ['"Roboto Flex"', 'sans-serif'],
       }
     },
   },

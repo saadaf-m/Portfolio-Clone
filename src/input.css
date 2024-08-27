@@ -5,7 +5,7 @@
 /* Define consola font */
 @font-face {
     font-family: 'CONSOLA';
-    src: url(./assets/fonts/CONSOLA.TTF) format('truetype');
+    src: url(/dist/assets/fonts/CONSOLA.TTF) format('truetype');
     font-display: swap;
     /* optional but for better font loading */
 }
@@ -13,16 +13,21 @@
 /* Define Consolas font */
 @font-face {
     font-family: 'Consolas';
-    src: url(./assets/fonts/Consolas.ttf) format('truetype');
+    src: url(/dist/assets/fonts/Consolas.ttf) format('truetype');
     font-display: swap;
 }
 
 /* Define Droid Sans font */
 @font-face {
     font-family: 'Droid Sans';
-    src: url(./assets/fonts/droid-sans-regular.ttf) format('truetype');
+    src: url(/dist/assets/fonts/droid-sans-regular.ttf) format('truetype');
     font-display: swap;
 }
+
+/* Define Roboto Flex font */
+/* .font-roboto-flex {
+    font-family: 'Roboto Flex', sans-serif;
+} */
 
 /* Vanilla CSS */
 .vanilla-bg-gradient { /* html background gradient */
@@ -100,30 +105,43 @@
 }
 
 @layer utilities {
-    /* CUSTOM CLASSES made for any section */
-
-    .home-bg-gradient { /* home section card gradient */
-        background: linear-gradient(200deg,
-        rgba(55, 78, 72, 0.23) 40%,
-        rgba(127, 180, 166, 0.43) 100%);
-    }
-
-    .home-bg-gradient-s {
-        /* home section card gradient style for devices w/ min. width of 480px */
+    /* vanilla CSS custom classes */
+    /* custom classes used in home section */
+    .bg-home-gradient {
         background: linear-gradient(0deg,
         rgba(55, 78, 72, 0.23) 40%,
         rgba(127, 180, 166, 0.43) 100%);
     }
+    
+    .bg-home-gradient-md {
+        background: linear-gradient(200deg,
+        rgba(55, 78, 72, 0.23) 40%,
+        rgba(127, 180, 166, 0.43) 100%);
+    }
+    
+    /* custom classes used in project section */
+    .bg-project-card-before {
+        background: linear-gradient(to bottom, 
+        #006A4E 0%,
+        #00D099 100%);
+    }
 
+    .project-card-before {
+        -webkit-mask:
+            linear-gradient(#fff 0 0) content-box,
+            linear-gradient(#fff 0 0);
+        -webkit-mask-composite: destination-out;
+        mask-composite: subtract;
+    }
 
+    .bg-project-card {
+        background: linear-gradient(
+        rgba(127, 180, 166, 0.29) 50%,
+        rgba(55, 78, 72, 0.12) 100%);
+    }
 
     .custom-bg-size {
         background-size: 100% 100vh;
-    }
-
-    /* apply margin-bottom: unset */
-    .mb-unset {
-        margin-bottom: unset;
     }
 
     /* apply no decarations to links */
@@ -142,7 +160,7 @@
     }
 
     .nav-ul {
-        @apply inline-flex items-center z-[3] mb-unset py-0.5 px-5 gap-x-[10px] 
+        @apply inline-flex items-center z-[3] mb-[unset] py-0.5 px-5 gap-x-[10px] 
         rounded-[3px] bg-dark-tempered-glass overflow-hidden;
     }
 
@@ -192,7 +210,7 @@
 
     #home-container {
         @apply relative inline-grid grid-cols-[auto_auto] mt-20 mx-40 
-        pt-[10px] px-10 h-[613px] z-0 home-bg-gradient-s border-none rounded-[7px]
+        pt-[10px] px-10 h-[613px] z-0 bg-home-gradient border-none rounded-[7px]
         
         xs:h-[650px] xs:mt-[30px] xs:mx-5 xs:mb-20 xs:px-3
         xs:grid-cols-[unset] xs:grid-rows-[auto_auto]
@@ -200,7 +218,7 @@
         s:grid s:mt-10 s:mx-5 s:mb-20 s:p-0 
 
         md:mx-[18px] md:py-0 pr-[5px] md:pl-5 md:h-[450px] md:grid-cols-[auto_auto]
-        md:home-bg-gradient 
+        md:bg-home-gradient-md
 
         lg:py-0 lg:pr-[5px] lg:pl-10
 
@@ -292,26 +310,41 @@
 
     /* section: projects */
     #projects {
-        @apply border-solid border-red-400 border-2;
+        @apply mt-10
+        border-solid border-red-400 border-2;
     }
     
+    /* formerly known as '#skills-wrapper' */
     #education {
-        @apply font-consola font-bold text-justify
-        border-dashed border-red-700 border-2;
+        @apply py-[140px] px-[200px] text-[35px] text-justify font-consola font-bold
+        xs:py-[120px] xs:px-[30px] xs:text-center xs:text-[22.5px]
+        s:px-20 s:text-[25px]
+        md:py-[140px] md:px-[100px] md:text-3xl;
     }
 
+    /* '#projects-container' */
     #projects-wrapper {
-
+        @apply flex flex-wrap justify-center mt-10 pb-20;
     }
 
-    .projects-container {
-
-    }
+    /* '.project-container-wrapper */
+    /* .projects-container {
+        @apply
+    } */
 
     .project-container {
+        @apply relative my-[10px] mx-[12.5px] p-[25px] z-0 font-roboto-flex
+        text-slate-grey h-[280px] w-[375px] rounded-[7px] bg-project-card
 
+        before:absolute before:content-[""] before:p-1 before:rounded-[7px]
+        before:top-0 before:left-0 before:right-0 before:bottom-0
+        before:bg-project-card-before before:project-card-before
+        before:pointer-events-none
+        
+        xs:mx-[17.5px] xs:w-[325px];
     }
 
+    /* '.stack-wrapper' */
     .stack-container {
 
     }
