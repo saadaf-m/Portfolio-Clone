@@ -1,82 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://static.vecteezy.com/system/resources/previews/027/951/096/original/pixel-art-a-coffee-cup-icon-png.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Portfolio Clone</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="styles.css" rel="stylesheet" />
-  <link rel="icon" type="image/x-icon"
-    href="https://static.vecteezy.com/system/resources/previews/027/951/096/original/pixel-art-a-coffee-cup-icon-png.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
-    rel="stylesheet" />
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-  <title>Portfolio Clone</title>
-</head>
-
-<body id="homepage" class="vanilla-bg-gradient">
-  <section id="navbar" class="navbar">
-    <nav>
-      <ul class="nav-ul">
-        <li><a href="#homepage">home</a></li>
-        <li><a href="#projects">projects</a></li>
-        <li><a href="#about">about</a></li>
-        <li><a href="#contact">contact</a></li>
-      </ul>
-      <p>
-        Saadaf Mohsin • Located in the Greater Toronto Area • (647) 640-6406 •
-        <button class="nav-email" onclick="copyContentNav()">
-          <i class="bx bxs-copy-alt"></i>
-          <p id="nav-email">saadafmohsin@gmail.com</p>
-        </button>
-      </p>
-    </nav>
-    <hr />
-  </section>
-
-  <section id="home">
-    <div id="home-container">
-      <div id="profile-card">
-        <h1>Saadaf Mohsin</h1>
-        <img id="profile-img" src="./assets/images/bonsai.jpg" alt="profile-pic" />
-        <ul id="social-links">
-          <li>
-            <a href="https://www.linkedin.com/in/saadaf-mohsin/" target="”_blank”">
-            <i class="bx bxl-linkedin social-icon"></i></a>
-          </li>
-          <li>
-            <a href="https://github.com/saadaf-m" target="”_blank”">
-            <i class="bx bxl-github social-icon"></i></a>
-          </li>
-          <li>
-            <a href="./" target="”_blank”">
-            <i class='bx bxs-file-pdf social-icon'></i></a>
-          </li>
-          <li>
-            <a href="mailto:saadafmohsin@gmail.com" target="”_blank”">
-            <i class='bx bx-mail-send social-icon'></i></a>
-          </li>
+  <body id="homepage" class="vanilla-bg-gradient">
+    <section id="navbar" class="navbar">
+      <nav>
+        <ul class="nav-ul">
+          <li><a href="#homepage">home</a></li>
+          <li><a href="#projects">projects</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#contact">contact</a></li>
         </ul>
-      </div>
-      <div id="profile-description">
-        <p><span>is a</span> Junior Front End Developer <span>primarily focused on the 
-          intersection of design, technology, and culture.</span>
+        <p>
+          Saadaf Mohsin • Located in the Greater Toronto Area • (647) 640-6406 •
+          <button class="nav-email" onclick="copyContentNav()">
+            <i class="bx bxs-copy-alt"></i>
+            <p id="nav-email">saadafmohsin@gmail.com</p>
+          </button>
         </p>
+      </nav>
+      <hr />
+    </section>
+
+    <section id="home">
+      <div id="home-container">
+        <div id="profile-card">
+          <h1>Saadaf Mohsin</h1>
+          <img
+            id="profile-img"
+            src="./assets/images/bonsai.jpg"
+            alt="profile-pic"
+          />
+          <ul id="social-links">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/saadaf-mohsin/"
+                target="”_blank”"
+              >
+                <i class="bx bxl-linkedin social-icon"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/saadaf-m" target="”_blank”">
+                <i class="bx bxl-github social-icon"></i
+              ></a>
+            </li>
+            <li>
+              <a href="./" target="”_blank”">
+                <i class="bx bxs-file-pdf social-icon"></i
+              ></a>
+            </li>
+            <li>
+              <a href="mailto:saadafmohsin@gmail.com" target="”_blank”">
+                <i class="bx bx-mail-send social-icon"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div id="profile-description">
+          <p>
+            <span>is a</span> Junior Front End Developer
+            <span
+              >primarily focused on the intersection of design, technology, and
+              culture.</span
+            >
+          </p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="projects"></section>
-  <section id="about"></section>
-  <section id="contact"></section>
-  <footer></footer>
+    <section id="projects">
+      <p id="education">
+        A recent Digital Media graduate from York University's School of Arts,
+        Media, Performance, and Design. See some of what I'm working on below:
+      </p>
+      <div id="projects-wrapper">
+        <div class="projects-container">
+          <div class="project-container">
+            <div class="stack-container">
+              <i class="bx bxl-react"></i>
+              <i class="bx bxl-javascript"></i>
+              <i class="bx bxl-tailwind-css"></i>
+              <i class="bx bxl-css3"></i>
+              <i class="bx bxl-html5"></i>
+            </div>
+            <div class="project-info">
+              <h2 class="project-heading">Project Name</h2>
+              <p class="project-description">Project Description</p>
+            </div>
+            <div class="project-link-container">
+              <i class='bx bx-link-external'></i>
+              <p class="project-link-text">
+                <a href="#" class="project-link">View Project</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <script src="/dist/script.js"></script>
-</body>
+    <section id="about"></section>
+    <section id="contact"></section>
+    <footer></footer>
 
+    <script src="/dist/script.js"></script>
+  </body>
 </html>
-
-<!-- Note that when the website is done, just upload the dist folder into your host 
- (or just the two folders in dist)-->
