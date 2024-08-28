@@ -333,25 +333,25 @@
     } */
 
     .project-container {
-        @apply relative my-[10px] mx-[12.5px] p-[25px] z-0 font-roboto-flex
-        text-slate-grey h-[280px] w-[375px] rounded-[7px] bg-project-card
+        @apply relative my-[10px] mx-[12.5px] z-0 font-roboto-flex
+        text-slate-grey h-[280px] rounded-[7px] bg-project-card
 
         before:absolute before:content-[""] before:p-1 before:rounded-[7px]
         before:top-0 before:left-0 before:right-0 before:bottom-0
         before:bg-project-card-before before:project-card-before
         before:pointer-events-none
         
-        xs:mx-[17.5px] xs:w-[325px];
+        xs:mx-[17.5px] xs:w-[325px] xs:p-[25px]
+        s:w-[375px] ;
     }
 
-    /* '.stack-wrapper' */
     .stack-container {
-
+        /* has no styles */
     }
 
     /* apply .stack-icon styles */
     .bx {
-
+        @apply text-[32.5px];
     }
 
     .bxl-react {
@@ -376,36 +376,43 @@
 
     /* formerly known as '.project-text-wrapper' */
     .project-info {
-
+        /* has no styles */
     }
 
     /* formerly known as '.project-title' */
     .project-heading {
-
+        @apply mt-[2.5px] text-[22.5px] font-medium
+        border-dashed border-green-400 border-2;
     }
 
     /* formerly known as '.project-desc' */
     .project-description {
-
+        @apply mt-[15px] h-[100px] text-[15px] font-extralight
+        border-dashed border-purple-400 border-2;
     }
 
     /* formerly known as '.view-project-wrapper' */
     .project-link-container {
-        
+        @apply flex absolute content-center top-[230px] text-[#95D1C1]
+        text-[13px] font-semibold;
     }
     
     /* apply '#i-hyperlink' styles */
     .bx-link-external {
-        
+        @apply mr-[5px] self-center text-[13px];
     }
     
     /* formerly known as '.view-project' */
     .project-link-text {
-
+        /* @apply self-center; */
     }
     
     .project-link {
+        @apply hover:font-bold duration-500;
+    }
 
+    .project-link:not(:hover) {
+        @apply duration-500;
     }
 
     
