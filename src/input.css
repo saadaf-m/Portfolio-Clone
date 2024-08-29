@@ -240,15 +240,10 @@
     /* #container-home-div-1 */
     #profile-card {
         @apply h-[594px] py-0 pr-[60px] pl-0 
-        
         xs:p-0 xs:pt-4 xs:h-[375px] xs:text-center xs:border-solid 
-        
-        s:h-[405px] s:justify-self-center s:pt-4
-        
+        s:h-[405px] s:justify-self-center s:pt-4       
         md:h-[431px] md:pt-0
-
-        lg2:h-full lg2:self-center lg2:mt-[-90px]
-        ;
+        lg2:h-full lg2:self-center lg2:mt-[-90px];
     }
 
     #profile-img {
@@ -258,11 +253,11 @@
         
         s:top-0 md:top-[10px] md:w-[245px] 
         
-         lg2:top-9 lg2:w-[380px] lg2:h-auto lg2:z-[-1] lg2:object-contain;
+        lg2:top-9 lg2:w-[380px] lg2:h-auto lg2:z-[-1] lg2:object-contain;
     }
 
     #social-links {
-        @apply relative flex top-[-67px] left-60 w-[260px] 
+        @apply relative flex top-[-67px] left-60 w-[260px]
         
         xs:justify-center xs:left-1/2 xs:-translate-x-1/2 xs:-top-14
 
@@ -274,7 +269,7 @@
     }
 
     #social-links > li {
-        @apply text-[62px] 
+        @apply text-[62px]
         xs:text-[53px] 
         s:text-[63px] 
         md:text-[59px]
@@ -345,8 +340,8 @@
         xs:mx-[17.5px] xs:w-[325px] xs:p-[25px]
         s:w-[375px] ;
     }
-
-    .bx {
+    
+    .stack-container > i {
         @apply text-[32.5px];
     }
 

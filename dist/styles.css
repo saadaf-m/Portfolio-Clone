@@ -1246,7 +1246,7 @@ footer {
   }
 }
 
-.bx {
+.stack-container > i {
   font-size: 32.5px;
 }
 
