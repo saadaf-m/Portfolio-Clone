@@ -196,15 +196,18 @@
         </div>
       </div>
     </section>
-
     <section id="about">
       <p id="about-intro-text" class="about-text">
         Along with learning the technologies of the web, I'm also keen on
         culture, design, and predicting emerging trends.
       </p>
       <div id="about-images">
-        <img src="./assets/images/pala-y3.jpg" alt="palace-y3" class="image"/>
-        <img src="./assets/images/skate-me.jpg" alt="saadaf-skating" class="image"/>
+        <img src="./assets/images/pala-y3.jpg" alt="palace-y3" class="image" />
+        <img
+          src="./assets/images/skate-me.jpg"
+          alt="saadaf-skating"
+          class="image"
+        />
       </div>
       <p id="about-example">
         E.g., The intersection of skate culture and streetwear is particularly
@@ -220,12 +223,73 @@
       </p>
     </section>
 
-    <section id="contact"></section>
+    <section id="contact">
+      <p id="contact-description">
+        Currently based in the GTA. I’m eager to collaborate at a company
+        pushing with a team dedicated to making a positive impact. If your
+        organization aligns with these values, I would love to connect. Please
+        feel free to contact me below.
+      </p>
+      <div id="email-copy-container">
+        <p id="copy-instruction">click to copy</p>
+        <button id="copy-email-button" onclick="copyContent()">
+          <i class="bx bxs-copy-alt"></i>
+          <p id="email-address">saadafmohsin@gmail.com</p>
+        </button>
+      </div>
+      <form action="#" method="post">
+        <label for="name" id="name-label">Name:</label><br />
+        <input
+          type="text"
+          class="item"
+          id="name"
+          placeholder="Name"
+          required
+        /><br />
+
+        <label for="email" id="email-label">Email:</label><br />
+        <input
+          type="email"
+          class="item"
+          id="email"
+          name="email"
+          placeholder="Email Address"
+          required
+        /><br />
+
+        <label for="subject" id="subject-label">Subject:</label><br />
+        <input
+          type="text"
+          class="item"
+          id="subject"
+          name="subject"
+          placeholder="Subject"
+          required
+        /><br /><br />
+
+        <label for="message" id="message-label">Message:</label><br />
+        <textarea
+          class="item"
+          id="message"
+          name="message"
+          rows="5"
+          cols="100"
+          placeholder="Send me a message"
+          required
+        ></textarea
+        ><br /><br />
+        <button id="submit-btn">
+          <input type="submit" id="submit" value="Send" />
+          <i class="bx bx-mail-send"></i>
+        </button>
+      </form>
+    </section>
+
     <footer>
       <div id="footer-container">
         <p id="footer-text">All rights reserved ©2024</p>
         <a href="#homepage">
-          <i class='bx bx-chevron-up-circle'></i>
+          <i class="bx bx-chevron-up-circle"></i>
         </a>
       </div>
     </footer>
