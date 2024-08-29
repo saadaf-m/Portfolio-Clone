@@ -413,7 +413,7 @@
         font-consola text-[30px] text-justify font-bold
         xs:px-[50px] text-xl
         s:px-20
-        md:px-[100px];
+        md:px-[100px] md:text-3xl;
     }
 
     #about-intro-text {
@@ -423,7 +423,8 @@
 
     #about-images {
         @apply flex relative justify-center p-[10px]
-        xs:pb-[5px];
+        xs:pb-[5px] xs:mt-[20px]
+        md:mt-[30px];
     }
 
     .image {
@@ -435,8 +436,8 @@
         @apply block text-[14.5px] font-consola italic text-center
         text-sea-green
 
-        xs:px-[10px] xs:text-[10px]
-        md:text-sm;
+        xs:px-[10px] xs:mb-5 xs:text-[10px]
+        md:mb-[30px] md:text-sm;
     }
     
     /* section: contact */
