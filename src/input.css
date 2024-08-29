@@ -180,6 +180,10 @@
         @apply duration-500;
     }
 
+    #copy-icon {
+        @apply text-[14px];
+    }
+
     .nav-email {
         @apply inline-flex items-center border-none no-bg
     }
@@ -381,30 +385,32 @@
 
     /* formerly known as '.project-title' */
     .project-heading {
-        @apply mt-[2.5px] text-[22.5px] font-medium
-        border-dashed border-green-400 border-2;
+        @apply mt-[2.5px] text-[22.5px] font-medium;
     }
 
     /* formerly known as '.project-desc' */
     .project-description {
-        @apply mt-[15px] h-[100px] text-[15px] font-extralight
-        border-dashed border-purple-400 border-2;
+        @apply mt-[15px] h-[100px] text-[15px] font-extralight;
     }
 
     /* formerly known as '.view-project-wrapper' */
     .project-link-container {
-        @apply flex absolute content-center top-[230px] text-[#95D1C1]
-        text-[13px] font-semibold;
+        @apply flex absolute top-[230px] text-[13px]
+        text-[#95D1C1] font-semibold;
     }
     
     /* apply '#i-hyperlink' styles */
     .bx-link-external {
-        @apply mr-[5px] self-center text-[13px];
+        @apply mr-[5px] self-center text-[16.5px];
     }
     
     /* formerly known as '.view-project' */
     .project-link-text {
-        /* @apply self-center; */
+        @apply self-center;
+    }
+
+    .wip-emoji {
+        @apply text-[16.5px] mr-[5px];
     }
     
     .project-link {
@@ -414,6 +420,8 @@
     .project-link:not(:hover) {
         @apply duration-500;
     }
+
+    /* section: about */
 
     
 

@@ -674,6 +674,14 @@ footer {
   position: sticky;
 }
 
+.ml-\[5px\] {
+  margin-left: 5px;
+}
+
+.text-sage-transparent {
+  color: rgba(214, 226, 223, 0.651);
+}
+
 .blur {
   --tw-blur: blur(8px);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -733,6 +741,10 @@ footer {
 
 .nav-ul>li>a:not(:hover) {
   transition-duration: 500ms;
+}
+
+#copy-icon {
+  font-size: 14px;
 }
 
 .nav-email {
@@ -1289,10 +1301,6 @@ footer {
 
 .project-heading {
   margin-top: 2.5px;
-  border-width: 2px;
-  border-style: dashed;
-  --tw-border-opacity: 1;
-  border-color: rgb(74 222 128 / var(--tw-border-opacity));
   font-size: 22.5px;
   font-weight: 500;
 }
@@ -1302,10 +1310,6 @@ footer {
 .project-description {
   margin-top: 15px;
   height: 100px;
-  border-width: 2px;
-  border-style: dashed;
-  --tw-border-opacity: 1;
-  border-color: rgb(192 132 252 / var(--tw-border-opacity));
   font-size: 15px;
   font-weight: 200;
 }
@@ -1316,7 +1320,6 @@ footer {
   position: absolute;
   top: 230px;
   display: flex;
-  align-content: center;
   font-size: 13px;
   font-weight: 600;
   --tw-text-opacity: 1;
@@ -1328,13 +1331,18 @@ footer {
 .bx-link-external {
   margin-right: 5px;
   align-self: center;
-  font-size: 13px;
+  font-size: 16.5px;
 }
 
 /* formerly known as '.view-project' */
 
 .project-link-text {
-  /* @apply self-center; */
+  align-self: center;
+}
+
+.wip-emoji {
+  margin-right: 5px;
+  font-size: 16.5px;
 }
 
 .project-link {
@@ -1348,6 +1356,8 @@ footer {
 .project-link:not(:hover) {
   transition-duration: 500ms;
 }
+
+/* section: about */
 
 /* Define consola font */
 
