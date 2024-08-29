@@ -473,16 +473,6 @@ h1 {
   font-weight: 700;
 }
 
-@media (min-width: 1262px) {
-  h1 {
-    --tw-text-opacity: 1;
-    color: rgb(46 197 124 / var(--tw-text-opacity));
-    /* Vanilla CSS for outlining text */
-    -webkit-text-stroke: 6px rgba(39, 127, 74, 0.651);
-    /* #529f9894; */
-  }
-}
-
 @media (min-width: 360px) {
   h1 {
     font-size: 41px;
@@ -1643,20 +1633,29 @@ footer {
     #email,
     #subject,
     #message {
-  height: 1.25rem;
+  height: 30px;
   max-width: 700px;
   border-radius: 5px;
   border-style: none;
   padding-left: 0.625rem;
-  font-family: "Droid Sans", monospace;
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+  font-family: Monospace, monospace;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   --tw-text-opacity: 1;
   color: rgb(199 201 201 / var(--tw-text-opacity));
   width: 65%;
   background: linear-gradient(
         rgba(55, 78, 72, 0.38),
         rgba(127, 180, 166, 0.29));
+}
+
+@media (min-width: 360px) {
+  #name,
+    #email,
+    #subject,
+    #message {
+    width: 100%;
+  }
 }
 
 #message {
@@ -1700,6 +1699,18 @@ footer {
   cursor: pointer;
 }
 
+@media (min-width: 360px) {
+  #submit-btn {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  #submit-btn {
+    width: 75%;
+  }
+}
+
 #submit,
     .bx-mail-send {
   color: rgba(214, 226, 223, 0.651);
@@ -1710,14 +1721,16 @@ footer {
   background-image: none;
   padding-left: 0.625rem;
   font-family: "JetBrains Mono", monospace;
-  font-size: 17.5px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .bx-mail-send {
   padding-right: 0.625rem;
-  font-size: 22.5px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 /* section: footer */

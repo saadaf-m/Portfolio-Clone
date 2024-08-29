@@ -74,7 +74,7 @@
         
         md:top-[34px] md:text-[45px] 
         
-        lg2:relative lg2:top-[80px] lg2:text-[64px] lg2:h1-outline
+        lg2:relative lg2:top-[80px] lg2:text-[64px]
         /* lg2:right-[29px] */
         ;
     }
@@ -170,6 +170,10 @@
     /* width: 65% */
     .w-65-percent {
         width: 65%;
+    }
+
+    .w-75-percent {
+        width: 75%;
     }
 
     /* bg for form */
@@ -532,9 +536,11 @@
     #email,
     #subject,
     #message {
-        @apply h-5 w-65-percent max-w-[700px] pl-2.5
-        text-xl font-droid-sans text-slate-grey
+        @apply h-[30px] w-65-percent max-w-[700px] pl-2.5
+        text-sm font-monospace text-slate-grey
         border-none rounded-[5px] bg-input-field
+        
+        xs:w-full;
     }
 
     #message {
@@ -558,8 +564,10 @@
     #submit-btn {
         @apply flex content-center items-center justify-between w-65-percent h-10 max-w-[700px]
         border-none rounded-[5px] bg-submit
-
-        hover:cursor-pointer;
+        hover:cursor-pointer
+        
+        xs:w-full
+        lg:w-75-percent;
     }
 
     #submit,
@@ -568,11 +576,11 @@
     }
 
     #submit {
-        @apply font-jetbrains border-none bg-none pl-2.5 uppercase font-bold text-[17.5px];
+        @apply font-jetbrains border-none bg-none pl-2.5 uppercase font-bold text-sm;
     }
 
     .bx-mail-send {
-        @apply pr-2.5 text-[22.5px];
+        @apply pr-2.5 text-sm;
     }
 
 

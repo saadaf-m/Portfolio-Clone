@@ -46,6 +46,7 @@ module.exports = {
         'droid-sans': ['"Droid Sans"', 'monospace'],
         jetbrains: ['"JetBrains Mono"', 'monospace'],
         'roboto-flex': ['"Roboto Flex"', 'sans-serif'],
+        monospace: ['Monospace', 'monospace'],
       }
     },
   },
