@@ -421,19 +421,16 @@
         md:text-center;
     }
 
-    /* #about-imgs-div */
     #about-images {
         @apply flex relative justify-center p-[10px]
         xs:pb-[5px];
     }
 
-    /* .about-img */
     .image {
         @apply w-40vw object-cover
         md:w-45vw;
     }
 
-    /* #eg */
     #about-example {
         @apply block text-[14.5px] font-consola italic text-center
         text-sea-green
@@ -442,5 +439,25 @@
         md:text-sm;
     }
     
+    /* section: contact */
+
+    /* section: footer */
+    #footer-container {
+        @apply grid grid-cols-[auto_auto] mx-[50px];
+    }
+
+    #footer-text {
+        @apply font-consola text-xs text-[#d6e2df59] self-center;
+    }
+
+    .bx-chevron-up-circle {
+        @apply float-end text-[40px] text-[#d6e2df38]
+        hover:text-sage-transparent hover:duration-500;
+    }
+
+    .bx-chevron-up-circle:not(:hover) {
+        @apply duration-500;
+    }
+
 
 }

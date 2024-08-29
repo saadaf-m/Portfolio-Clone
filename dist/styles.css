@@ -1383,8 +1383,6 @@ footer {
   }
 }
 
-/* #about-imgs-div */
-
 #about-images {
   position: relative;
   display: flex;
@@ -1398,8 +1396,6 @@ footer {
   }
 }
 
-/* .about-img */
-
 .image {
   -o-object-fit: cover;
      object-fit: cover;
@@ -1411,8 +1407,6 @@ footer {
     width: 45vw;
   }
 }
-
-/* #eg */
 
 #about-example {
   display: block;
@@ -1437,6 +1431,40 @@ footer {
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
+}
+
+/* section: contact */
+
+/* section: footer */
+
+#footer-container {
+  margin-left: 50px;
+  margin-right: 50px;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+#footer-text {
+  align-self: center;
+  font-family: CONSOLA, monospace;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: #d6e2df59;
+}
+
+.bx-chevron-up-circle {
+  float: inline-end;
+  font-size: 40px;
+  color: #d6e2df38;
+}
+
+.bx-chevron-up-circle:hover {
+  color: rgba(214, 226, 223, 0.651);
+  transition-duration: 500ms;
+}
+
+.bx-chevron-up-circle:not(:hover) {
+  transition-duration: 500ms;
 }
 
 /* Define consola font */
