@@ -1497,25 +1497,58 @@ footer {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   #contact-description {
     padding-left: 5rem;
     padding-right: 5rem;
   }
 }
 
+@media (min-width: 768px) {
+  #contact-description {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
 /* CHANGE THIS TO START LEFT */
 
 #email-copy-container {
-  text-align: center;
+  position: relative;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 50px;
+  display: flex;
+  width: 300px;
+  max-width: 100%;
+  flex-direction: column;
+}
+
+@media (min-width: 360px) {
+  #email-copy-container {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+@media (min-width: 480px) {
+  #email-copy-container {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #email-copy-container {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
 }
 
 #copy-instruction {
-  width: 10px;
-  height: 10px;
   padding-left: 2.5px;
-  text-align: center;
   font-family: "JetBrains Mono", monospace;
+  font-size: 10px;
   text-transform: uppercase;
   font-style: italic;
   color: #d6e2df26;
@@ -1529,13 +1562,14 @@ footer {
   align-items: center;
   border-radius: 5px;
   border-width: 2px;
+  border-style: solid;
   border-color: transparent;
   background-image: none;
   padding-left: 0.125rem;
   padding-right: 0.125rem;
   font-family: "JetBrains Mono", monospace;
-  text-transform: none;
   transition-duration: 500ms;
+  text-decoration: none;
 }
 
 #copy-email-button:hover {
@@ -1551,6 +1585,10 @@ footer {
 }
 
 @media (min-width: 360px) {
+  #copy-email-button {
+    font-size: 18.5px;
+  }
+
   #copy-email-button:hover {
     border-style: none;
   }
@@ -1566,11 +1604,14 @@ footer {
 }
 
 .bxs-copy-alt {
-  margin-right: 0.625rem;
+  margin-right: 0.5rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 #email-address {
-  /* unused */
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 /* section: footer */

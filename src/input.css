@@ -444,33 +444,40 @@
     }
 
     #contact-description {
-        @apply block mx-auto mb-[15px] pt-[12.5px] px-[55px] font-consola text-3xl
-        text-justify font-bold
+        @apply block mx-auto mb-[15px] pt-[12.5px] px-[55px] 
+        font-consola text-3xl text-justify font-bold
 
         xs:px-[50px] xs:text-xl
-        md:px-20;
+        s:px-20
+        md:px-[100px];
     }
 
     /* CHANGE THIS TO START LEFT */
     #email-copy-container {
-        @apply text-center;
+        @apply flex relative flex-col 
+        ml-[50px] my-4 w-[300px] max-w-full
+
+        xs:mx-[50px]
+        s:mx-20
+        md:mx-[100px];
     }
 
     #copy-instruction {
-        @apply pl-[2.5px] font-jetbrains size-[10px] italic uppercase text-[#d6e2df26]
-        text-center;
+        @apply pl-[2.5px] font-jetbrains text-[10px] italic uppercase text-[#d6e2df26]
+        ;
     }
 
     #copy-email-button {
-        @apply inline-flex px-0.5 bg-none items-center font-jetbrains size-[18.5px]
-        normal-case border-2 border-transparent rounded-[5px] 
+        @apply inline-flex items-center px-0.5 
+        bg-none font-jetbrains size-[18.5px] no-text-decoration
+        border-2 border-solid border-transparent rounded-[5px] 
         
         hover:border-2 hover:border-solid hover:text-sage-transparent hover:rounded-[5px]
         cursor-pointer duration-500
 
         focus:outline-[#00be0000] focus:outline-offset-[10px]
 
-        xs:hover:border-none xs:focus:outline-none
+        xs:text-[18.5px] xs:hover:border-none xs:focus:outline-none
     }
 
     #copy-email-button:not(:hover) {
@@ -478,11 +485,11 @@
     }
 
     .bxs-copy-alt {
-        @apply mr-2.5;
+        @apply mr-2 text-lg;
     }
 
     #email-address {
-        /* unused */
+        @apply text-lg
     }
 
     
