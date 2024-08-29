@@ -697,6 +697,10 @@ footer {
 
 /* apply no background (targets all background properties) */
 
+/* width: 40vw (for imgs in about section) */
+
+/* width: 45vw (for imgs in about section) */
+
 /* section: nav */
 
 .navbar {
@@ -1138,13 +1142,7 @@ footer {
 
 #projects {
   margin-top: 2.5rem;
-  border-width: 2px;
-  border-style: solid;
-  --tw-border-opacity: 1;
-  border-color: rgb(248 113 113 / var(--tw-border-opacity));
 }
-
-/* formerly known as '#skills-wrapper' */
 
 #education {
   padding-top: 140px;
@@ -1187,8 +1185,6 @@ footer {
   }
 }
 
-/* '#projects-container' */
-
 #projects-wrapper {
   margin-top: 2.5rem;
   display: flex;
@@ -1196,12 +1192,6 @@ footer {
   justify-content: center;
   padding-bottom: 5rem;
 }
-
-/* '.project-container-wrapper */
-
-/* .projects-container {
-        @apply
-    } */
 
 .project-container {
   position: relative;
@@ -1256,12 +1246,6 @@ footer {
   }
 }
 
-.stack-container {
-  /* has no styles */
-}
-
-/* apply .stack-icon styles */
-
 .bx {
   font-size: 32.5px;
 }
@@ -1291,21 +1275,11 @@ footer {
   color: rgb(240 101 41 / var(--tw-text-opacity));
 }
 
-/* formerly known as '.project-text-wrapper' */
-
-.project-info {
-  /* has no styles */
-}
-
-/* formerly known as '.project-title' */
-
 .project-heading {
   margin-top: 2.5px;
   font-size: 22.5px;
   font-weight: 500;
 }
-
-/* formerly known as '.project-desc' */
 
 .project-description {
   margin-top: 15px;
@@ -1313,8 +1287,6 @@ footer {
   font-size: 15px;
   font-weight: 200;
 }
-
-/* formerly known as '.view-project-wrapper' */
 
 .project-link-container {
   position: absolute;
@@ -1326,15 +1298,11 @@ footer {
   color: rgb(149 209 193 / var(--tw-text-opacity));
 }
 
-/* apply '#i-hyperlink' styles */
-
 .bx-link-external {
   margin-right: 5px;
   align-self: center;
   font-size: 16.5px;
 }
-
-/* formerly known as '.view-project' */
 
 .project-link-text {
   align-self: center;
@@ -1358,6 +1326,118 @@ footer {
 }
 
 /* section: about */
+
+#about {
+  padding-bottom: 100px;
+}
+
+.about-text {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 55px;
+  padding-right: 55px;
+  text-align: justify;
+  font-family: CONSOLA, monospace;
+  font-size: 30px;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}
+
+@media (min-width: 360px) {
+  .about-text {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: 480px) {
+  .about-text {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-text {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+#about-intro-text {
+  margin-top: 0px;
+  padding-top: 15px;
+}
+
+@media (min-width: 768px) {
+  #about-intro-text {
+    text-align: center;
+  }
+}
+
+/* #about-imgs-div */
+
+#about-images {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+@media (min-width: 360px) {
+  #about-images {
+    padding-bottom: 5px;
+  }
+}
+
+/* .about-img */
+
+.image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 40vw;
+}
+
+@media (min-width: 768px) {
+  .image {
+    width: 45vw;
+  }
+}
+
+/* #eg */
+
+#about-example {
+  display: block;
+  text-align: center;
+  font-family: CONSOLA, monospace;
+  font-size: 14.5px;
+  font-style: italic;
+  --tw-text-opacity: 1;
+  color: rgb(46 197 124 / var(--tw-text-opacity));
+}
+
+@media (min-width: 360px) {
+  #about-example {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  #about-example {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
 
 /* Define consola font */
 

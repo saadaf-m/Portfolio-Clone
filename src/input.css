@@ -154,6 +154,16 @@
         background: none;
     }
 
+    /* width: 40vw (for imgs in about section) */
+    .w-40vw {
+        width: 40vw;
+    }
+
+    /* width: 45vw (for imgs in about section) */
+    .w-45vw {
+        width: 45vw;
+    }
+
     /* section: nav */
     .navbar {
         @apply w-full pt-[15px] px-[15px] pb-0 font-jetbrains;
@@ -203,13 +213,9 @@
     /* section: home */
     #home {
         @apply pt-5 
-        
         s:p-0
-
         md:mt-[70px]
-        
         lg2:mt-20;
-
     }
 
     #home-container {
@@ -238,7 +244,6 @@
         xs:p-0 xs:pt-4 xs:h-[375px] xs:text-center xs:border-solid 
         
         s:h-[405px] s:justify-self-center s:pt-4
-        /* s:border-red-400 s:border-2 */
         
         md:h-[431px] md:pt-0
 
@@ -314,11 +319,9 @@
 
     /* section: projects */
     #projects {
-        @apply mt-10
-        border-solid border-red-400 border-2;
+        @apply mt-10;
     }
-    
-    /* formerly known as '#skills-wrapper' */
+
     #education {
         @apply py-[140px] px-[200px] text-[35px] text-justify font-consola font-bold
         xs:py-[120px] xs:px-[30px] xs:text-center xs:text-[22.5px]
@@ -326,15 +329,9 @@
         md:py-[140px] md:px-[100px] md:text-3xl;
     }
 
-    /* '#projects-container' */
     #projects-wrapper {
         @apply flex flex-wrap justify-center mt-10 pb-20;
     }
-
-    /* '.project-container-wrapper */
-    /* .projects-container {
-        @apply
-    } */
 
     .project-container {
         @apply relative my-[10px] mx-[12.5px] z-0 font-roboto-flex
@@ -349,11 +346,6 @@
         s:w-[375px] ;
     }
 
-    .stack-container {
-        /* has no styles */
-    }
-
-    /* apply .stack-icon styles */
     .bx {
         @apply text-[32.5px];
     }
@@ -378,33 +370,23 @@
         @apply text-[#f06529];
     }
 
-    /* formerly known as '.project-text-wrapper' */
-    .project-info {
-        /* has no styles */
-    }
-
-    /* formerly known as '.project-title' */
     .project-heading {
         @apply mt-[2.5px] text-[22.5px] font-medium;
     }
 
-    /* formerly known as '.project-desc' */
     .project-description {
         @apply mt-[15px] h-[100px] text-[15px] font-extralight;
     }
 
-    /* formerly known as '.view-project-wrapper' */
     .project-link-container {
         @apply flex absolute top-[230px] text-[13px]
         text-[#95D1C1] font-semibold;
     }
-    
-    /* apply '#i-hyperlink' styles */
+
     .bx-link-external {
         @apply mr-[5px] self-center text-[16.5px];
     }
     
-    /* formerly known as '.view-project' */
     .project-link-text {
         @apply self-center;
     }
@@ -422,7 +404,43 @@
     }
 
     /* section: about */
+    #about {
+        @apply pb-[100px];
+    }
 
+    .about-text {
+        @apply block w-fit my-[10px] mx-auto py-0 px-[55px] 
+        font-consola text-[30px] text-justify font-bold
+        xs:px-[50px] text-xl
+        s:px-20
+        md:px-[100px];
+    }
+
+    #about-intro-text {
+        @apply mt-0 pt-[15px]
+        md:text-center;
+    }
+
+    /* #about-imgs-div */
+    #about-images {
+        @apply flex relative justify-center p-[10px]
+        xs:pb-[5px];
+    }
+
+    /* .about-img */
+    .image {
+        @apply w-40vw object-cover
+        md:w-45vw;
+    }
+
+    /* #eg */
+    #about-example {
+        @apply block text-[14.5px] font-consola italic text-center
+        text-sea-green
+
+        xs:px-[10px] xs:text-[10px]
+        md:text-sm;
+    }
     
 
 }
