@@ -725,6 +725,12 @@ footer {
 
 /* width: 45vw (for imgs in about section) */
 
+/* width: 65% */
+
+/* bg for form */
+
+/* bg for submit button */
+
 /* section: nav */
 
 .navbar {
@@ -1612,6 +1618,106 @@ footer {
 #email-address {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+#name-label,
+    #email-label,
+    #subject-label,
+    #message-label {
+  font-family: CONSOLA, monospace;
+  font-size: 21.5px;
+  font-weight: 700;
+}
+
+#name-label {
+  margin-top: 8.5px;
+}
+
+#email-label,
+    #subject-label,
+    #message-label {
+  margin-top: 5px;
+}
+
+#name,
+    #email,
+    #subject,
+    #message {
+  height: 1.25rem;
+  max-width: 700px;
+  border-radius: 5px;
+  border-style: none;
+  padding-left: 0.625rem;
+  font-family: "Droid Sans", monospace;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(199 201 201 / var(--tw-text-opacity));
+  width: 65%;
+  background: linear-gradient(
+        rgba(55, 78, 72, 0.38),
+        rgba(127, 180, 166, 0.29));
+}
+
+#message {
+  height: 70px;
+}
+
+#name::-moz-placeholder, #email::-moz-placeholder, #subject::-moz-placeholder, #message::-moz-placeholder {
+  color: #d6e2df38;
+}
+
+#name::placeholder,
+    #email::placeholder,
+    #subject::placeholder,
+    #message::placeholder {
+  color: #d6e2df38;
+}
+
+#name:focus,
+    #email:focus,
+    #subject:focus,
+    #message:focus {
+  outline-color: #739A78;
+}
+
+#submit-btn {
+  display: flex;
+  height: 2.5rem;
+  max-width: 700px;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  border-style: none;
+  width: 65%;
+  background: linear-gradient(rgba(127, 180, 166, 0.473) 0%,
+        rgba(91, 129, 119, 0.11) 50%,
+        rgba(127, 180, 166, 0.27) 100%);
+}
+
+#submit-btn:hover {
+  cursor: pointer;
+}
+
+#submit,
+    .bx-mail-send {
+  color: rgba(214, 226, 223, 0.651);
+}
+
+#submit {
+  border-style: none;
+  background-image: none;
+  padding-left: 0.625rem;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 17.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.bx-mail-send {
+  padding-right: 0.625rem;
+  font-size: 22.5px;
 }
 
 /* section: footer */

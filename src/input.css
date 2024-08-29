@@ -167,6 +167,25 @@
         width: 45vw;
     }
 
+    /* width: 65% */
+    .w-65-percent {
+        width: 65%;
+    }
+
+    /* bg for form */
+    .bg-input-field {
+        background: linear-gradient(
+        rgba(55, 78, 72, 0.38),
+        rgba(127, 180, 166, 0.29));
+    }
+
+    /* bg for submit button */
+    .bg-submit {
+        background: linear-gradient(rgba(127, 180, 166, 0.473) 0%,
+        rgba(91, 129, 119, 0.11) 50%,
+        rgba(127, 180, 166, 0.27) 100%);
+    }
+
     /* section: nav */
     .navbar {
         @apply w-full pt-[15px] px-[15px] pb-0 font-jetbrains;
@@ -492,7 +511,69 @@
         @apply text-lg
     }
 
+    #name-label,
+    #email-label,
+    #subject-label,
+    #message-label {
+        @apply font-consola text-[21.5px] font-bold;
+    }
+
+    #name-label {
+        @apply mt-[8.5px];
+    }
+
+    #email-label,
+    #subject-label,
+    #message-label {
+        @apply mt-[5px];
+    }
+
+    #name,
+    #email,
+    #subject,
+    #message {
+        @apply h-5 w-65-percent max-w-[700px] pl-2.5
+        text-xl font-droid-sans text-slate-grey
+        border-none rounded-[5px] bg-input-field
+    }
+
+    #message {
+        @apply h-[70px];
+    }
     
+    #name::placeholder,
+    #email::placeholder,
+    #subject::placeholder,
+    #message::placeholder {
+        @apply text-[#d6e2df38];
+    }
+
+    #name:focus,
+    #email:focus,
+    #subject:focus,
+    #message:focus {
+        @apply outline-clay-green;
+    }
+
+    #submit-btn {
+        @apply flex content-center items-center justify-between w-65-percent h-10 max-w-[700px]
+        border-none rounded-[5px] bg-submit
+
+        hover:cursor-pointer;
+    }
+
+    #submit,
+    .bx-mail-send {
+        @apply text-sage-transparent;
+    }
+
+    #submit {
+        @apply font-jetbrains border-none bg-none pl-2.5 uppercase font-bold text-[17.5px];
+    }
+
+    .bx-mail-send {
+        @apply pr-2.5 text-[22.5px];
+    }
 
 
     /* section: footer */
