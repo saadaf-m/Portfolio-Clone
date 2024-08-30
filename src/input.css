@@ -571,7 +571,7 @@
     }
 
     #submit,
-    .bx-mail-send {
+    .bx-right-arrow-alt {
         @apply text-sage-transparent;
     }
 
@@ -580,7 +580,7 @@
     }
 
     .bx-right-arrow-alt {
-        @apply pr-2.5 text-sm;
+        @apply pr-2.5 text-lg;
     }
 
 
@@ -591,10 +591,6 @@
 
     #footer-text {
         @apply font-consola text-xs text-[#d6e2df59] self-center;
-    }
-
-    #footer-icon-send {
-        
     }
 
     .bx-chevron-up-circle {
