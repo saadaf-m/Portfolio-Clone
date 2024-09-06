@@ -580,7 +580,7 @@
     }
 
     .bx-right-arrow-alt {
-        @apply pr-2.5 text-[18px];
+        @apply pr-2.5 text-lg;
     }
 
 
