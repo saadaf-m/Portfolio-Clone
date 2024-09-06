@@ -519,7 +519,7 @@
     #email-label,
     #subject-label,
     #message-label {
-        @apply font-consola text-[21.5px] font-bold;
+        @apply font-consola text-[21.5px] text-sage font-bold;
     }
 
     #name-label {
@@ -571,7 +571,7 @@
     }
 
     #submit,
-    .bx-mail-send {
+    .bx-right-arrow-alt {
         @apply text-sage-transparent;
     }
 
@@ -579,8 +579,8 @@
         @apply font-jetbrains border-none bg-none pl-2.5 uppercase font-bold text-sm;
     }
 
-    .bx-mail-send {
-        @apply pr-2.5 text-sm;
+    .bx-right-arrow-alt {
+        @apply pr-2.5 text-[18px];
     }
 
 

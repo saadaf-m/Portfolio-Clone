@@ -1617,6 +1617,8 @@ footer {
   font-family: CONSOLA, monospace;
   font-size: 21.5px;
   font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(110 154 142 / var(--tw-text-opacity));
 }
 
 #name-label {
@@ -1712,7 +1714,7 @@ footer {
 }
 
 #submit,
-    .bx-mail-send {
+    .bx-right-arrow-alt {
   color: rgba(214, 226, 223, 0.651);
 }
 
@@ -1727,10 +1729,9 @@ footer {
   text-transform: uppercase;
 }
 
-.bx-mail-send {
+.bx-right-arrow-alt {
   padding-right: 0.625rem;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  font-size: 18px;
 }
 
 /* section: footer */
