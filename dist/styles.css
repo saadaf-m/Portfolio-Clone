@@ -688,12 +688,8 @@ footer {
   position: sticky;
 }
 
-.ml-\[5px\] {
-  margin-left: 5px;
-}
-
-.text-sage-transparent {
-  color: rgba(214, 226, 223, 0.651);
+.grow {
+  flex-grow: 1;
 }
 
 .blur {
@@ -790,6 +786,20 @@ footer {
 .nav-email>i {
   margin-right: 5.85px;
   color: #bbc9bda2;
+}
+
+/* Global */
+
+#section-header {
+  margin-top: 0px;
+  padding-top: 15px;
+  text-align: center;
+  font-family: Helvetica Neue Medium, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  --tw-text-opacity: 1;
+  color: rgb(199 201 201 / var(--tw-text-opacity));
 }
 
 /* section: home */
@@ -1280,6 +1290,11 @@ footer {
   color: rgb(247 223 30 / var(--tw-text-opacity));
 }
 
+.bxl-mongodb {
+  --tw-text-opacity: 1;
+  color: rgb(88 150 54 / var(--tw-text-opacity));
+}
+
 .bxl-tailwind-css {
   --tw-text-opacity: 1;
   color: rgb(14 165 233 / var(--tw-text-opacity));
@@ -1328,11 +1343,6 @@ footer {
   align-self: center;
 }
 
-.wip-emoji {
-  margin-right: 5px;
-  font-size: 16.5px;
-}
-
 .project-link {
   transition-duration: 500ms;
 }
@@ -1349,60 +1359,6 @@ footer {
 
 #about {
   padding-bottom: 100px;
-}
-
-.about-text {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 55px;
-  padding-right: 55px;
-  text-align: justify;
-  font-family: CONSOLA, monospace;
-  font-size: 30px;
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  font-weight: 700;
-}
-
-@media (min-width: 360px) {
-  .about-text {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-}
-
-@media (min-width: 480px) {
-  .about-text {
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .about-text {
-    padding-left: 100px;
-    padding-right: 100px;
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-}
-
-#about-intro-text {
-  margin-top: 0px;
-  padding-top: 15px;
-}
-
-@media (min-width: 768px) {
-  #about-intro-text {
-    text-align: center;
-  }
 }
 
 #about-images {
@@ -1439,12 +1395,14 @@ footer {
 
 #about-example {
   display: block;
+  padding-left: 55px;
+  padding-right: 55px;
   text-align: center;
   font-family: CONSOLA, monospace;
   font-size: 14.5px;
   font-style: italic;
   --tw-text-opacity: 1;
-  color: rgb(46 197 124 / var(--tw-text-opacity));
+  color: rgb(0 106 78 / var(--tw-text-opacity));
 }
 
 @media (min-width: 360px) {
@@ -1464,10 +1422,45 @@ footer {
   }
 }
 
-/* section: contact */
-
-#contact {
+#about-text {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  display: block;
+  padding-left: 55px;
+  padding-right: 55px;
+  padding-top: 12.5px;
+  text-align: justify;
+  font-family: CONSOLA, monospace;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
 }
+
+@media (min-width: 360px) {
+  #about-text {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 480px) {
+  #about-text {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #about-text {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+/* section: contact */
 
 #contact-description {
   margin-left: auto;
@@ -1477,7 +1470,7 @@ footer {
   padding-left: 55px;
   padding-right: 55px;
   padding-top: 12.5px;
-  text-align: justify;
+  text-align: center;
   font-family: CONSOLA, monospace;
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -1507,105 +1500,8 @@ footer {
   }
 }
 
-/* CHANGE THIS TO START LEFT */
-
-#email-copy-container {
-  position: relative;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  margin-left: 50px;
-  display: flex;
-  width: 300px;
-  max-width: 100%;
-  flex-direction: column;
-}
-
-@media (min-width: 360px) {
-  #email-copy-container {
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-}
-
-@media (min-width: 480px) {
-  #email-copy-container {
-    margin-left: 5rem;
-    margin-right: 5rem;
-  }
-}
-
-@media (min-width: 768px) {
-  #email-copy-container {
-    margin-left: 100px;
-    margin-right: 100px;
-  }
-}
-
-#copy-instruction {
-  padding-left: 2.5px;
-  font-family: "JetBrains Mono", monospace;
-  font-size: 10px;
-  text-transform: uppercase;
-  font-style: italic;
-  color: #d6e2df26;
-}
-
-#copy-email-button {
-  display: inline-flex;
-  width: 18.5px;
-  height: 18.5px;
-  cursor: pointer;
-  align-items: center;
-  border-radius: 5px;
-  border-width: 2px;
-  border-style: solid;
-  border-color: transparent;
-  background-image: none;
-  padding-left: 0.125rem;
-  padding-right: 0.125rem;
-  font-family: "JetBrains Mono", monospace;
-  transition-duration: 500ms;
-  text-decoration: none;
-}
-
-#copy-email-button:hover {
-  border-radius: 5px;
-  border-width: 2px;
-  border-style: solid;
-  color: rgba(214, 226, 223, 0.651);
-}
-
-#copy-email-button:focus {
-  outline-offset: 10px;
-  outline-color: #00be0000;
-}
-
-@media (min-width: 360px) {
-  #copy-email-button {
-    font-size: 18.5px;
-  }
-
-  #copy-email-button:hover {
-    border-style: none;
-  }
-
-  #copy-email-button:focus {
-    outline: 2px solid transparent;
-    outline-offset: 2px;
-  }
-}
-
-#copy-email-button:not(:hover) {
-  transition-duration: 500ms;
-}
-
 .bxs-copy-alt {
   margin-right: 0.5rem;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
-#email-address {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
@@ -1615,26 +1511,21 @@ footer {
     #subject-label,
     #message-label {
   font-family: CONSOLA, monospace;
-  font-size: 21.5px;
-  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
   --tw-text-opacity: 1;
-  color: rgb(110 154 142 / var(--tw-text-opacity));
+  color: rgb(199 201 201 / var(--tw-text-opacity));
 }
 
 #name-label {
   margin-top: 8.5px;
 }
 
-#email-label,
-    #subject-label,
-    #message-label {
-  margin-top: 5px;
-}
-
 #name,
     #email,
     #subject,
     #message {
+  margin-bottom: 0.5rem;
   height: 30px;
   max-width: 700px;
   border-radius: 5px;
@@ -1704,12 +1595,6 @@ footer {
 @media (min-width: 360px) {
   #submit-btn {
     width: 100%;
-  }
-}
-
-@media (min-width: 1024px) {
-  #submit-btn {
-    width: 75%;
   }
 }
 
@@ -1795,6 +1680,16 @@ footer {
   font-family: 'Droid Sans';
 
   src: url(/dist/assets/fonts/droid-sans-regular.ttf) format('truetype');
+
+  font-display: swap;
+}
+
+/* Define Helvetica Neue Medium font */
+
+@font-face {
+  font-family: 'Helvetica Neue Medium';
+
+  src: url('../dist/assets/fonts/HelveticaNeueMedium.ttf') format('truetype');
 
   font-display: swap;
 }

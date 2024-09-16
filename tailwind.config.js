@@ -47,6 +47,7 @@ module.exports = {
         jetbrains: ['"JetBrains Mono"', 'monospace'],
         'roboto-flex': ['"Roboto Flex"', 'sans-serif'],
         monospace: ['Monospace', 'monospace'],
+        helvetica: ['Helvetica Neue Medium', 'sans-serif'],
       }
     },
   },

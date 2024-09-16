@@ -24,6 +24,14 @@
     font-display: swap;
 }
 
+/* Define Helvetica Neue Medium font */
+@font-face {
+    font-family: 'Helvetica Neue Medium';
+    src: url('../dist/assets/fonts/HelveticaNeueMedium.ttf') format('truetype');
+    font-display: swap;
+  }
+  
+
 /* Define Roboto Flex font */
 /* .font-roboto-flex {
     font-family: 'Roboto Flex', sans-serif;
@@ -236,6 +244,12 @@
         @apply text-[#bbc9bda2] mr-[5.85px];
     }
 
+    /* Global */
+    #section-header {
+        @apply mt-0 pt-[15px] text-sm text-slate-grey 
+        font-helvetica font-normal text-center;
+    }
+
     /* section: home */
     #home {
         @apply pt-5 
@@ -379,6 +393,10 @@
         @apply text-[#f7df1e];
     }
 
+    .bxl-mongodb {
+        @apply text-[#589636];
+    }
+
     .bxl-tailwind-css {
         @apply text-[#0ea5e9];
     }
@@ -429,19 +447,6 @@
         @apply pb-[100px];
     }
 
-    .about-text {
-        @apply block w-fit my-[10px] mx-auto py-0 px-[55px] 
-        font-consola text-[30px] text-justify font-bold
-        xs:px-[50px] text-xl
-        s:px-20
-        md:px-[100px] md:text-3xl;
-    }
-
-    #about-intro-text {
-        @apply mt-0 pt-[15px]
-        md:text-center;
-    }
-
     #about-images {
         @apply flex relative justify-center p-[10px]
         xs:pb-[5px] xs:mt-[20px]
@@ -454,90 +459,54 @@
     }
 
     #about-example {
-        @apply block text-[14.5px] font-consola italic text-center
-        text-red-400
+        @apply block px-[55px] text-[14.5px] font-consola italic text-center
+        text-container-border-1
 
         xs:px-[10px] xs:mb-5 xs:text-[10px]
         md:mb-[30px] md:text-sm;
     }
+
+    #about-text {
+        @apply block mx-auto mb-[15px] pt-[12.5px] px-[55px] 
+        font-consola text-3xl font-bold text-justify
+
+        xs:px-[50px] xs:text-xl
+        s:px-20
+        md:px-[100px];
+    }
     
     /* section: contact */
-    #contact {
-
-    }
-
     #contact-description {
         @apply block mx-auto mb-[15px] pt-[12.5px] px-[55px] 
-        font-consola text-3xl text-justify font-bold
+        font-consola text-3xl font-bold text-center
 
         xs:px-[50px] xs:text-xl
         s:px-20
         md:px-[100px];
     }
 
-    /* CHANGE THIS TO START LEFT */
-    #email-copy-container {
-        @apply flex relative flex-col 
-        ml-[50px] my-4 w-[300px] max-w-full
-
-        xs:mx-[50px]
-        s:mx-20
-        md:mx-[100px];
-    }
-
-    #copy-instruction {
-        @apply pl-[2.5px] font-jetbrains text-[10px] italic uppercase text-[#d6e2df26]
-        ;
-    }
-
-    #copy-email-button {
-        @apply inline-flex items-center px-0.5 
-        bg-none font-jetbrains size-[18.5px] no-text-decoration
-        border-2 border-solid border-transparent rounded-[5px] 
-        
-        hover:border-2 hover:border-solid hover:text-sage-transparent hover:rounded-[5px]
-        cursor-pointer duration-500
-
-        focus:outline-[#00be0000] focus:outline-offset-[10px]
-
-        xs:text-[18.5px] xs:hover:border-none xs:focus:outline-none
-    }
-
-    #copy-email-button:not(:hover) {
-        @apply duration-500;
-    }
-
     .bxs-copy-alt {
         @apply mr-2 text-lg;
-    }
-
-    #email-address {
-        @apply text-lg
     }
 
     #name-label,
     #email-label,
     #subject-label,
     #message-label {
-        @apply font-consola text-[21.5px] text-sage font-bold;
+        @apply font-consola text-base text-slate-grey;
     }
 
     #name-label {
         @apply mt-[8.5px];
     }
 
-    #email-label,
-    #subject-label,
-    #message-label {
-        @apply mt-[5px];
-    }
 
     #name,
     #email,
     #subject,
     #message {
         @apply h-[30px] w-65-percent max-w-[700px] pl-2.5
-        text-sm font-monospace text-slate-grey
+        text-sm font-monospace text-slate-grey mb-2
         border-none rounded-[5px] bg-input-field
         
         xs:w-full;
@@ -566,8 +535,7 @@
         border-none rounded-[5px] bg-submit
         hover:cursor-pointer
         
-        xs:w-full
-        lg:w-75-percent;
+        xs:w-full;
     }
 
     #submit,
