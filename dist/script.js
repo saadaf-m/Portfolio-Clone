@@ -1,5 +1,3 @@
-// console.log(copyEmail);
-
 /**
  * Sticky navbar
  */

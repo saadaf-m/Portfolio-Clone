@@ -115,6 +115,7 @@
 @layer utilities {
     /* vanilla CSS custom classes */
     /* custom classes used in home section */
+
     .bg-home-gradient {
         background: linear-gradient(0deg,
         rgba(55, 78, 72, 0.23) 40%,
@@ -196,11 +197,19 @@
     }
 
     /* section: nav */
+    .sticky {
+        @apply fixed top-5;
+    }
+    
+    .sticky+.content {
+        @apply pt-[60px];
+    }
+
     .navbar {
         @apply w-full pt-[15px] px-[15px] pb-0 font-jetbrains;
     }
 
-    .nav-ul {
+    #nav-ul {
         @apply inline-flex items-center z-[3] mb-[unset] py-0.5 px-5 gap-x-[10px] 
         rounded-[3px] bg-dark-tempered-glass overflow-hidden;
     }

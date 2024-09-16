@@ -727,6 +727,15 @@ footer {
 
 /* section: nav */
 
+.sticky {
+  position: fixed;
+  top: 1.25rem;
+}
+
+.sticky+.content {
+  padding-top: 60px;
+}
+
 .navbar {
   width: 100%;
   padding-left: 15px;
@@ -736,7 +745,7 @@ footer {
   font-family: "JetBrains Mono", monospace;
 }
 
-.nav-ul {
+#nav-ul {
   z-index: 3;
   margin-bottom: unset;
   display: inline-flex;
