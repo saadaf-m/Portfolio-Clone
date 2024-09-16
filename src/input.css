@@ -455,7 +455,7 @@
 
     #about-example {
         @apply block text-[14.5px] font-consola italic text-center
-        text-sea-green
+        text-red-400
 
         xs:px-[10px] xs:mb-5 xs:text-[10px]
         md:mb-[30px] md:text-sm;
