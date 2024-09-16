@@ -30,12 +30,6 @@
     src: url('../dist/assets/fonts/HelveticaNeueMedium.ttf') format('truetype');
     font-display: swap;
   }
-  
-
-/* Define Roboto Flex font */
-/* .font-roboto-flex {
-    font-family: 'Roboto Flex', sans-serif;
-} */
 
 /* Vanilla CSS */
 .vanilla-bg-gradient { /* html background gradient */
@@ -92,7 +86,10 @@
     }
 
     nav {
-        @apply flex flex-col items-center justify-between text-[13px];
+        @apply flex flex-row items-center justify-between text-[13px]
+        
+        xs:flex-col
+        md:flex-row;
     }
 
     nav>p {
@@ -337,7 +334,7 @@
     }
 
     #profile-description > p {
-        @apply font-consola font-bold text-[51.5px] text-center mb-[unset]
+        @apply font-consola font-bold text-[51.5px] text-center mb-[unset] text-container-border-1
 
         xs:py-0 xs:px-[5px] xs:text-[23px]
         
@@ -468,7 +465,7 @@
 
     #about-text {
         @apply block mx-auto mb-[15px] pt-[12.5px] px-[55px] 
-        font-consola text-3xl font-bold text-justify
+        font-consola text-3xl text-justify text-sage-transparent
 
         xs:px-[50px] xs:text-xl
         s:px-20
@@ -493,7 +490,7 @@
     #email-label,
     #subject-label,
     #message-label {
-        @apply font-consola text-base text-slate-grey;
+        @apply font-helvetica text-base text-slate-grey;
     }
 
     #name-label {
@@ -506,7 +503,7 @@
     #subject,
     #message {
         @apply h-[30px] w-65-percent max-w-[700px] pl-2.5
-        text-sm font-monospace text-slate-grey mb-2
+        text-sm font-helvetica text-slate-grey mb-2
         border-none rounded-[5px] bg-input-field
         
         xs:w-full;
@@ -544,7 +541,7 @@
     }
 
     #submit {
-        @apply font-jetbrains border-none bg-none pl-2.5 uppercase font-bold text-sm;
+        @apply font-jetbrains border-none bg-none pl-2.5 text-sm;
     }
 
     .bx-right-arrow-alt {
@@ -554,11 +551,23 @@
 
     /* section: footer */
     #footer-container {
-        @apply grid grid-cols-[auto_auto] mx-[50px];
+        @apply grid grid-cols-[auto_auto] mx-[50px] font-consola;
     }
 
-    #footer-text {
-        @apply font-consola text-xs text-[#d6e2df59] self-center;
+    /* #footer-text {
+        @apply text-xs text-[#d6e2df59] self-center;
+    } */
+
+    #footer-socials {
+        @apply text-[#d6e2dfa5] flex flex-row gap-4 self-center
+    }
+
+    #footer-socials > li {
+        @apply hover:text-tomato hover:text-[18px] hover:font-bold duration-1000;
+    }
+
+    #footer-socials>li:not(:hover) {
+        @apply duration-500;
     }
 
     .bx-chevron-up-circle {
