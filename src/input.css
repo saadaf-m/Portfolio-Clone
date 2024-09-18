@@ -218,16 +218,12 @@
         @apply list-none;
     }
 
+    .nav-li {
+        @apply hover:text-nav-link-hover-color duration-500;
+    }
+
     .nav-ul>li>a {
         @apply p-0 no-text-decoration;
-    }
-
-    .nav-ul>li>a:hover {
-        @apply text-nav-link-hover-color duration-500;
-    }
-
-    .nav-ul>li>a:not(:hover) {
-        @apply duration-500;
     }
 
     #copy-icon {
@@ -364,10 +360,13 @@
     }
 
     #education {
-        @apply py-[140px] px-[200px] text-[35px] text-justify font-consola font-bold
+        @apply py-[140px] px-[200px] text-[35px] font-consola font-bold
+        
         xs:py-[120px] xs:px-[30px] xs:text-center xs:text-[22.5px]
+        
         s:px-20 s:text-[25px]
-        md:py-[140px] md:px-[100px] md:text-3xl;
+        
+        md:py-[140px] md:px-[100px] md:text-3xl md:text-justify;
     }
 
     #projects-wrapper {
@@ -375,8 +374,8 @@
     }
 
     .project-container {
-        @apply relative my-[10px] mx-[12.5px] z-0 font-roboto-flex
-        text-slate-grey h-[280px] rounded-[7px] bg-project-card
+        @apply relative my-[10px] mx-[12.5px] h-[280px] z-0 font-roboto-flex
+        text-slate-grey rounded-[7px] bg-project-card
 
         before:absolute before:content-[""] before:p-1 before:rounded-[7px]
         before:top-0 before:left-0 before:right-0 before:bottom-0
@@ -384,7 +383,7 @@
         before:pointer-events-none
         
         xs:mx-[17.5px] xs:w-[325px] xs:p-[25px]
-        s:w-[375px] ;
+        s:w-[375px];
     }
     
     .stack-container > i {
@@ -416,11 +415,15 @@
     }
 
     .project-heading {
-        @apply mt-[2.5px] text-[22.5px] font-medium;
+        @apply mt-[2.5px] font-medium
+        xs:text-[20px]
+        s:text-[22.5px];
     }
 
     .project-description {
-        @apply mt-[15px] h-[100px] text-[15px] font-extralight;
+        @apply mt-[15px] h-[100px] font-extralight
+        xs:text-[14px]
+        s:text-[15px];
     }
 
     .project-link-container {
@@ -572,7 +575,7 @@
     }
 
     #footer-socials > li {
-        @apply hover:text-tomato hover:text-[18px] hover:font-bold duration-1000;
+        @apply hover:text-blood hover:text-[18px] hover:font-bold duration-1000;
     }
 
     #footer-socials>li:not(:hover) {
