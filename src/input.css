@@ -68,17 +68,10 @@
 
     h1 {
         @apply relative top-[2.5px] font-consola font-bold text-6xl 
-        
         xs:text-[41px]
-        
         s:top-6 s:text-[45px]
-        /* s:right-10 */
-        
-        md:top-[34px] md:text-[45px] 
-        
-        lg2:relative lg2:top-[80px] lg2:text-[64px]
-        /* lg2:right-[29px] */
-        ;
+        md:top-[34px] md:text-[45px]  
+        lg2:relative lg2:top-[70px] lg2:text-[64px];
     }
 
     li {
@@ -192,8 +185,13 @@
     /* bg for submit button */
     .bg-submit {
         background: linear-gradient(rgba(127, 180, 166, 0.473) 0%,
+        rgba(91, 129, 119, 0.11) 50%);
+    }
+    
+    .bg-submit-hover {
+        background: linear-gradient(rgba(127, 180, 166, 0.27) 0%,
         rgba(91, 129, 119, 0.11) 50%,
-        rgba(127, 180, 166, 0.27) 100%);
+        rgba(127, 180, 166, 0.473) 100%);
     }
 
     /* section: nav */
@@ -249,7 +247,7 @@
     /* Global */
     .section-header {
         @apply mt-0 pt-[15px] text-xs text-slate-grey 
-        font-jetbrains font-bold text-center;
+        font-jetbrains text-center;
     }
 
     /* section: home */
@@ -284,8 +282,8 @@
         @apply h-[594px] py-0 pr-[60px] pl-0 
         xs:p-0 xs:pt-4 xs:h-[375px] xs:text-center xs:border-solid 
         s:h-[405px] s:justify-self-center s:pt-4       
-        md:h-[431px] md:pt-0
-        lg2:h-full lg2:self-center lg2:mt-[-90px];
+        md:h-[431px] md:pt-0 md:mt-2
+        lg2:h-full lg2:self-center lg2:mt-[-50px];
     }
 
     #profile-img {
@@ -319,7 +317,19 @@
     }
 
     .social-icon {
-        @apply hover:text-container-border-1 hover:duration-500;
+        @apply hover:duration-500 hover:text-[60px];
+    }
+
+    .social-icon.bxl-linkedin {
+        @apply hover:text-[#0077B5];
+    }
+
+    .social-icon.bxl-github {
+        @apply hover:text-[#6e5494];
+    }
+
+    .social-icon.bx-mail-send {
+        @apply hover:text-[#FBBC05];
     }
 
     .social-icon:not(:hover) {
@@ -339,7 +349,8 @@
     }
 
     #profile-description > p {
-        @apply font-consola font-semibold text-[51.5px] text-center mb-[unset] text-container-border-1
+        @apply font-consola font-semibold text-[51.5px] text-center mb-[unset]
+        text-container-border-1
 
         xs:py-0 xs:px-[5px] xs:text-[23px]
         
@@ -360,7 +371,7 @@
     }
 
     #education {
-        @apply py-[140px] px-[200px] text-[35px] font-consola font-bold
+        @apply py-[140px] px-[200px] text-[35px] font-consola font-semibold
         
         xs:py-[120px] xs:px-[30px] xs:text-center xs:text-[22.5px]
         
@@ -502,13 +513,12 @@
     #email-label,
     #subject-label,
     #message-label {
-        @apply font-helvetica text-base text-slate-grey;
+        @apply font-helvetica text-[15px] text-slate-grey;
     }
 
     #name-label {
         @apply mt-[8.5px];
     }
-
 
     #name,
     #email,
@@ -517,12 +527,11 @@
         @apply h-[30px] w-65-percent max-w-[700px] pl-2.5
         text-sm font-helvetica text-slate-grey mb-2
         border-none rounded-[5px] bg-input-field
-        
         xs:w-full;
     }
 
     #message {
-        @apply h-[70px];
+        @apply h-[90px];
     }
     
     #name::placeholder,
@@ -530,6 +539,10 @@
     #subject::placeholder,
     #message::placeholder {
         @apply text-[#d6e2df38];
+    }
+
+    #message::placeholder {
+        @apply pt-1;
     }
 
     #name:focus,
@@ -540,9 +553,9 @@
     }
 
     #submit-btn {
-        @apply flex content-center items-center justify-between w-65-percent h-10 max-w-[700px]
-        border-none rounded-[5px] bg-submit
-        hover:cursor-pointer
+        @apply flex content-center items-center justify-between w-65-percent 
+        h-10 max-w-[700px] border-none rounded-[5px] bg-submit
+        hover:cursor-pointer hover:bg-submit-hover
         
         xs:w-full;
     }
@@ -560,23 +573,36 @@
         @apply pr-2.5 text-lg;
     }
 
-
     /* section: footer */
     #footer-container {
         @apply grid grid-cols-[auto_auto] mx-[50px] font-consola;
     }
-
-    /* #footer-text {
-        @apply text-xs text-[#d6e2df59] self-center;
-    } */
 
     #footer-socials {
         @apply text-[#d6e2dfa5] flex flex-row gap-4 self-center
     }
 
     #footer-socials > li {
-        @apply hover:text-blood hover:text-[18px] hover:font-bold duration-1000;
+        @apply hover:text-[19px] hover:font-bold duration-500;
     }
+
+    #footer-linkedin {
+        @apply hover:text-[#0077B5];
+    }
+
+    #footer-github {
+        @apply hover:text-[#6e5494];
+    }
+
+    #footer-resume {
+        @apply hover:text-tomato;
+    }
+
+    #footer-gmail {
+        @apply hover:text-[#FBBC05];
+    }
+
+
 
     #footer-socials>li:not(:hover) {
         @apply duration-500;
