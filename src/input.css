@@ -247,9 +247,9 @@
     }
 
     /* Global */
-    #section-header {
-        @apply mt-0 pt-[15px] text-sm text-slate-grey 
-        font-helvetica font-normal text-center;
+    .section-header {
+        @apply mt-0 pt-[15px] text-xs text-slate-grey 
+        font-jetbrains font-bold text-center;
     }
 
     /* section: home */
@@ -339,7 +339,7 @@
     }
 
     #profile-description > p {
-        @apply font-consola font-bold text-[51.5px] text-center mb-[unset] text-container-border-1
+        @apply font-consola font-semibold text-[51.5px] text-center mb-[unset] text-container-border-1
 
         xs:py-0 xs:px-[5px] xs:text-[23px]
         
