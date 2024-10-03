@@ -505,6 +505,8 @@
         md:px-[100px];
     }
 
+    
+
     .bxs-copy-alt {
         @apply mr-2 text-lg;
     }
@@ -616,6 +618,4 @@
     .bx-chevron-up-circle:not(:hover) {
         @apply duration-500;
     }
-
-
 }
