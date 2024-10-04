@@ -244,6 +244,14 @@
         @apply text-[#bbc9bda2] mr-[5.85px];
     }
 
+    #disclaimer {
+        @apply text-[12px] text-slate-grey text-center;
+    }
+
+    #disclaimer > span {
+        @apply text-[18px];
+    }
+
     /* Global */
     .section-header {
         @apply mt-0 pt-[15px] text-xs text-slate-grey 
