@@ -329,15 +329,13 @@
     }
 
     .social-icon.bxl-linkedin {
-        @apply hover:text-[#b50000];
+        @apply hover:text-[#0077B5];
     }
     
     .social-icon.bxl-behance {
-    }
-    
-    #testy {
-        @apply hover:text-[#0077B5];
-        
+        @apply hover:text-[#0554ff] 
+        md:text-[80px] align-middle pb-3;
+
     }
 
     .social-icon.bxl-github {
@@ -520,8 +518,6 @@
         s:px-20
         md:px-[100px];
     }
-
-    
 
     .bxs-copy-alt {
         @apply mr-2 text-lg;
