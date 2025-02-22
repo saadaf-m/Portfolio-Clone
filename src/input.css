@@ -329,7 +329,15 @@
     }
 
     .social-icon.bxl-linkedin {
+        @apply hover:text-[#b50000];
+    }
+    
+    .social-icon.bxl-behance {
+    }
+    
+    #testy {
         @apply hover:text-[#0077B5];
+        
     }
 
     .social-icon.bxl-github {
