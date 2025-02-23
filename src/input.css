@@ -399,7 +399,7 @@
     }
 
     .project-container {
-        @apply relative my-[10px] mx-[12.5px] h-[280px] z-0 font-roboto-flex
+        @apply relative my-[10px] mx-[12.5px] h-[400px] z-0 font-roboto-flex
         text-slate-grey rounded-[7px] bg-project-card
 
         before:absolute before:content-[""] before:p-1 before:rounded-[7px]
@@ -408,7 +408,7 @@
         before:pointer-events-none
         
         xs:mx-[17.5px] xs:w-[325px] xs:p-[25px]
-        s:w-[375px];
+        s:w-[475px];
     }
     
     .stack-container > i {
@@ -439,6 +439,17 @@
         @apply text-[#f06529];
     }
 
+    .figma-img {
+        @apply w-[90px] h-auto py-1;
+        
+        /* width: 150px; Set your desired width */
+        /* height: auto;  Maintains aspect ratio */
+    }
+
+    .figma-img img {
+        @apply w-full h-auto;
+    }
+
     .project-heading {
         @apply mt-[2.5px] font-medium
         xs:text-[20px]
@@ -448,12 +459,32 @@
     .project-description {
         @apply mt-[15px] h-[100px] font-extralight
         xs:text-[14px]
-        s:text-[15px];
+        s:text-[16px];
     }
 
     .project-link-container {
-        @apply flex absolute top-[230px] text-[13px]
+        @apply flex text-[16px]
+
+        absolute bottom-6
+
         text-[#95D1C1] font-semibold;
+    }
+
+
+    /* This is bad code. */
+    .project-link-container-case-study {
+        @apply flex text-[16px] 
+        justify-between
+        
+        absolute bottom-6
+        /* bg-red-700 */
+        
+        text-[#95D1C1] font-semibold;
+    }
+    
+    /* This is also bad code. */
+    .case-study-link {
+        @apply flex;
     }
 
     .bx-link-external {
