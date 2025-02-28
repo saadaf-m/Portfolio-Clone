@@ -426,6 +426,10 @@
         @apply text-[#f7df1e];
     }
 
+    .bxl-unity {
+        @apply text-[#19E3B1];
+    };
+
     .bxl-mongodb {
         @apply text-[#589636];
     }
@@ -443,7 +447,7 @@
     }
 
     .figma-img {
-        @apply w-[90px] h-auto py-1;
+        @apply w-[85px] h-auto py-1;
         
         /* width: 150px; Set your desired width */
         /* height: auto;  Maintains aspect ratio */
